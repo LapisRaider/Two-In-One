@@ -32,6 +32,9 @@
     "name": "sLivingCat_Walking",
     "path": "sprites/sLivingCat_Walking/sLivingCat_Walking.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sLivingCat_Jumping",
+    "path": "sprites/sLivingCat_Jumping/sLivingCat_Jumping.yy",
+  },
   "visible": true,
 }

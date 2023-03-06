@@ -32,6 +32,8 @@
     "IDEVersion": "2023.1.1.62",
   },
   "resources": [
+    {"id":{"name":"sLivingCat_Falling","path":"sprites/sLivingCat_Falling/sLivingCat_Falling.yy",},"order":3,},
+    {"id":{"name":"sLivingCat_Jumping","path":"sprites/sLivingCat_Jumping/sLivingCat_Jumping.yy",},"order":2,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":15,},
     {"id":{"name":"sLivingCat_Idle","path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},"order":1,},
     {"id":{"name":"sLivingCat_Walking","path":"sprites/sLivingCat_Walking/sLivingCat_Walking.yy",},"order":0,},
