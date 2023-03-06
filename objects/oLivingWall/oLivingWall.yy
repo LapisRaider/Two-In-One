@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oTempWall",
+  "name": "oLivingWall",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "Wall_Collision_Living",
+    "path": "sprites/Wall_Collision_Living/Wall_Collision_Living.yy",
   },
   "spriteMaskId": null,
   "visible": true,

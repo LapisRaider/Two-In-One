@@ -9,6 +9,7 @@ function UpdateMovement(xDir, isJump) {
 		}
 	}
 
+	
 	//collision with collidables
 	for (var i = 0; i < array_length(COLLIDABLES); i += 1) {
 		//horizontal collision 
@@ -55,6 +56,9 @@ function UpdateAnim(xDir) {
 	}
 }
 
+if (!global.isLivingGhost) {
+	return;
+}
 
 var moveDir = keyboard_check(vk_right) - keyboard_check(vk_left); //don't let player move if press both keys
 var isPressJump = keyboard_check_pressed(vk_space);
@@ -62,6 +66,3 @@ var isPressJump = keyboard_check_pressed(vk_space);
 var otherTest = moveDir;
 UpdateMovement(moveDir, isPressJump);
 UpdateAnim(otherTest);
-
-draw_set_colour(c_yellow);
-draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
