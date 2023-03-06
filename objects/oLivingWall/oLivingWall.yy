@@ -6,10 +6,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "LivingCat",
+    "path": "folders/Objects/LivingCat.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oLivingCat_ParentWalls",
+    "path": "objects/oLivingCat_ParentWalls/oLivingCat_ParentWalls.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

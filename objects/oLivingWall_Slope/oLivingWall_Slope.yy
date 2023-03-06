@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oLivingWall_Slope",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "LivingCat",
+    "path": "folders/Objects/LivingCat.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oLivingCat_ParentWalls",
+    "path": "objects/oLivingCat_ParentWalls/oLivingCat_ParentWalls.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Wall_Collision_Normal",
-    "path": "sprites/Wall_Collision_Normal/Wall_Collision_Normal.yy",
+    "name": "Wall_Collision_Living",
+    "path": "sprites/Wall_Collision_Living/Wall_Collision_Living.yy",
   },
   "spriteMaskId": null,
   "visible": true,
