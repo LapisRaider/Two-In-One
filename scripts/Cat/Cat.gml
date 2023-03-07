@@ -6,7 +6,7 @@ function UpdateMovement(xDir, isJump) {
 	yVel += GRAVITY;
 	
 	//if fall to ground
-	if (place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT) && yVel > 0) {
+	if ((place_meeting(x, y + yVel + GROUND_THRESHOLD, oBox) || place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT)) && yVel > 0) {
 		isOnGround = true;
 		if (jumpsLeft == 0) {
 			jumpsLeft = JUMP_NUMBER;
@@ -30,6 +30,11 @@ function UpdateMovement(xDir, isJump) {
 		}
 	}
 	
+	PushBox();
+	BasicCollision(oBox);
+	
+	 
+	
 	//move and collide
 	var collidedObjs = move_and_collide(xVel, yVel, O_COLLIDABLES_PARENT);
 	
@@ -37,6 +42,14 @@ function UpdateMovement(xDir, isJump) {
 	// or if player touches on ground, just stop player
 	if (array_length(collidedObjs) != 0 && place_meeting(x, y + yVel, O_COLLIDABLES_PARENT)) {
 		yVel = 0;
+	}
+}
+
+
+function PushBox() {
+	var instance = instance_place(x + xVel, y, oBox);
+	if (instance != noone) {
+		instance.MoveInDirX(sign(xVel), 1);
 	}
 }
 
