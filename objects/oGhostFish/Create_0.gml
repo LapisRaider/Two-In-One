@@ -1,0 +1,1 @@
+global.totalFishesInLevel += 1;

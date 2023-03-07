@@ -1,4 +1,4 @@
-if (global.currFishesCollected != NO_OF_FISHES) {
+if (global.currFishesCollected < global.totalFishesInLevel) {
 	return;
 }
 
