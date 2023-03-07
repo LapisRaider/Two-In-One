@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGhostCat",
+  "name": "oDoor",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oGhostFish","path":"objects/oGhostFish/oGhostFish.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GhostCat",
-    "path": "folders/Objects/GhostCat.yy",
+    "name": "InteractableObjects",
+    "path": "folders/Objects/InteractableObjects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,12 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sGhostCat_Idle",
-    "path": "sprites/sGhostCat_Idle/sGhostCat_Idle.yy",
+    "name": "Door",
+    "path": "sprites/Door/Door.yy",
   },
   "spriteMaskId": {
-    "name": "sGhostCat_Walking",
-    "path": "sprites/sGhostCat_Walking/sGhostCat_Walking.yy",
+    "name": "Door",
+    "path": "sprites/Door/Door.yy",
   },
   "visible": true,
 }

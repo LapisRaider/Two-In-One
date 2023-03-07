@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d6eba5c-ae16-4e3d-912b-1e5fe69b57a6",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23d782db-931b-481d-bda7-8cfeeb2db2bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d6eba5c-ae16-4e3d-912b-1e5fe69b57a6",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -48,15 +48,15 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0d6eba5c-ae16-4e3d-912b-1e5fe69b57a6","path":"sprites/Door/Door.yy",},},},"Disabled":false,"id":"53b943ff-4160-4df8-aaa5-c99c8d4123cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23d782db-931b-481d-bda7-8cfeeb2db2bb","path":"sprites/Door/Door.yy",},},},"Disabled":false,"id":"e7346774-1d7e-474d-8933-c4bdbb6cc5c1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23d782db-931b-481d-bda7-8cfeeb2db2bb","path":"sprites/Door/Door.yy",},},},"Disabled":false,"id":"e7346774-1d7e-474d-8933-c4bdbb6cc5c1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0d6eba5c-ae16-4e3d-912b-1e5fe69b57a6","path":"sprites/Door/Door.yy",},},},"Disabled":false,"id":"53b943ff-4160-4df8-aaa5-c99c8d4123cf","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
