@@ -46,9 +46,9 @@ function UpdateMovement(xDir, isJump) {
 
 
 function PushBox() {
-	var instance = instance_place(x + xVel, y, oBox);
+	var instance = instance_place(x + xVel, y, O_BOX);
 	if (instance != noone) {
-		instance.MoveInDirX(sign(xVel), 1);
+		instance.MoveInDirX(sign(xVel), PUSH_STRENGTH);
 	}
 }
 
