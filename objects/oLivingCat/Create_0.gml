@@ -1,20 +1,22 @@
-#macro WALKING_ANIM_NAME sLivingCat_Walking
-#macro IDLE_ANIM_NAME sLivingCat_Idle
-#macro FALLING_ANIM_NAME sLivingCat_Falling
-#macro JUMPING_ANIM_NAME sLivingCat_Jumping
-#macro ORIGINAL_SCALE_SIZE 0.7
+// VALUES FOR LIVING CAT
 
-#macro SPEED 1
-#macro GRAVITY 0.1
-#macro JUMP_SPEED 2.8
-#macro JUMP_NUMBER 1
-#macro GROUND_THRESHOLD 0.1
+WALKING_ANIM_NAME = sLivingCat_Walking
+IDLE_ANIM_NAME = sLivingCat_Idle
+FALLING_ANIM_NAME = sLivingCat_Falling
+JUMPING_ANIM_NAME = sLivingCat_Jumping
+ORIGINAL_SCALE_SIZE = 0.7
 
-#macro O_COLLIDABLES_PARENT oLivingCat_ParentWalls
-#macro O_COLLIDABLE_WALL oLivingWall
-#macro O_COLLIDABLE_SLOPE oLivingWall_Slope
+SPEED = 1
+GRAVITY = 0.1
+JUMP_SPEED = 2.8
+JUMP_NUMBER = 1
+GROUND_THRESHOLD = 0.1
 
+O_COLLIDABLES_PARENT = oLivingCat_ParentWalls
+O_COLLIDABLE_WALL = oLivingWall
+O_COLLIDABLE_SLOPE = oLivingWall_Slope
 
+//VARIABLES THAT WILL CHANGE IN RUN TIME FOR LIVING CAT 
 xVel = 0
 yVel = 0
 jumpsLeft = JUMP_NUMBER

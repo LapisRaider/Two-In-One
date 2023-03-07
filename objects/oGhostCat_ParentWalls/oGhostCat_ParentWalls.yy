@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGhostWall",
+  "name": "oGhostCat_ParentWalls",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,10 +9,7 @@
     "name": "GhostCat",
     "path": "folders/Objects/GhostCat.yy",
   },
-  "parentObjectId": {
-    "name": "oGhostCat_ParentWalls",
-    "path": "objects/oGhostCat_ParentWalls/oGhostCat_ParentWalls.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "Wall_Collision_Ghost",
-    "path": "sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

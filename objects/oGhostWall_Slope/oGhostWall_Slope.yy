@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGhostWall",
+  "name": "oGhostWall_Slope",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

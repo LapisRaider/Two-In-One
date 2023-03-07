@@ -1,5 +1,5 @@
 if (keyboard_check_pressed(ord("X"))) {
-	global.isLivingGhost = !global.isLivingGhost;
+	global.isLivingCat = !global.isLivingCat;
 }
 
 //update the background and color and stuff based on which cat

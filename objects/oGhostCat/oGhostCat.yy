@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGhostWall",
-  "eventList": [],
+  "name": "oGhostCat",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "GhostCat",
     "path": "folders/Objects/GhostCat.yy",
   },
-  "parentObjectId": {
-    "name": "oGhostCat_ParentWalls",
-    "path": "objects/oGhostCat_ParentWalls/oGhostCat_ParentWalls.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Wall_Collision_Ghost",
-    "path": "sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",
+    "name": "sGhostCat_Idle",
+    "path": "sprites/sGhostCat_Idle/sGhostCat_Idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sGhostCat_Walking",
+    "path": "sprites/sGhostCat_Walking/sGhostCat_Walking.yy",
+  },
   "visible": true,
 }
