@@ -5,13 +5,13 @@ if (mode != TRANS_MODE.OFF) {
 	if (mode == TRANS_MODE.INTRO) {
 		//reduce by 1/10 of the percent or 0.005
 		//start fast then slowly decrease
-		percent = max(0, percent - max(percent/10, 0.005));
+		percent = max(0, percent - max(percent/transitionSpeed, 0.005));
 	}
 	else {
-		percent = min(1.2, percent + max((1-percent)/10, 0.005));
+		percent = min(1 + timeBetweenTransition, percent + max((1-percent)/transitionSpeed, 0.005));
 	}
 	
-	if (percent == 1.2 || percent == 0) {
+	if (percent == 1 + timeBetweenTransition || percent == 0) {
 		switch (mode) {
 			case TRANS_MODE.INTRO: {
 				mode = TRANS_MODE.OFF;

@@ -12,6 +12,8 @@ enum TRANS_MODE {
 } 
 mode = TRANS_MODE.INTRO;
 percent = 1; //for transition fade animation
+transitionSpeed = 8; //smaller the faster
+timeBetweenTransition = 0.2; //how much extra time the screen will pause at the fully black screen
 
 targetRoom = Room1; //which is next room
 
