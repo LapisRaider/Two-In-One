@@ -20,6 +20,7 @@
     {"name":"GhostCat","order":8,"path":"folders/Objects/GhostCat.yy",},
     {"name":"InteractableObjects","order":9,"path":"folders/Objects/InteractableObjects.yy",},
     {"name":"GhostCat","order":8,"path":"folders/Sprites/GhostCat.yy",},
+    {"name":"Interactables","order":9,"path":"folders/Sprites/Interactables.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oLivingWall","order":4,"path":"objects/oLivingWall/oLivingWall.yy",},
@@ -31,6 +32,7 @@
     {"name":"Wall_Collision_Living","order":1,"path":"sprites/Wall_Collision_Living/Wall_Collision_Living.yy",},
     {"name":"Sprite3","order":15,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"oLivingWall_Slope","order":5,"path":"objects/oLivingWall_Slope/oLivingWall_Slope.yy",},
+    {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"sLivingCat_Idle","order":5,"path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},
     {"name":"oGhostWall_Slope","order":3,"path":"objects/oGhostWall_Slope/oGhostWall_Slope.yy",},
     {"name":"oGhostCat_ParentWalls","order":1,"path":"objects/oGhostCat_ParentWalls/oGhostCat_ParentWalls.yy",},
