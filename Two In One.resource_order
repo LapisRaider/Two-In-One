@@ -24,9 +24,11 @@
   "ResourceOrderSettings": [
     {"name":"oLivingWall","order":4,"path":"objects/oLivingWall/oLivingWall.yy",},
     {"name":"sLivingCat_Jumping","order":6,"path":"sprites/sLivingCat_Jumping/sLivingCat_Jumping.yy",},
+    {"name":"oTransition","order":10,"path":"objects/oTransition/oTransition.yy",},
     {"name":"oGameManager","order":4,"path":"objects/oGameManager/oGameManager.yy",},
     {"name":"sGhostCat_Falling","order":1,"path":"sprites/sGhostCat_Falling/sGhostCat_Falling.yy",},
     {"name":"oDoor","order":2,"path":"objects/oDoor/oDoor.yy",},
+    {"name":"src_SlideTransition","order":2,"path":"scripts/src_SlideTransition/src_SlideTransition.yy",},
     {"name":"sGhostCat_Jumping","order":2,"path":"sprites/sGhostCat_Jumping/sGhostCat_Jumping.yy",},
     {"name":"Wall_Collision_Ghost","order":2,"path":"sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",},
     {"name":"Wall_Collision_Living","order":1,"path":"sprites/Wall_Collision_Living/Wall_Collision_Living.yy",},

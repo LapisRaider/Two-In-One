@@ -41,10 +41,12 @@
   "resources": [
     {"id":{"name":"oLivingWall","path":"objects/oLivingWall/oLivingWall.yy",},"order":4,},
     {"id":{"name":"sLivingCat_Jumping","path":"sprites/sLivingCat_Jumping/sLivingCat_Jumping.yy",},"order":6,},
+    {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":10,},
     {"id":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},"order":4,},
     {"id":{"name":"sGhostCat_Falling","path":"sprites/sGhostCat_Falling/sGhostCat_Falling.yy",},"order":1,},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"order":2,},
     {"id":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},"order":0,},
+    {"id":{"name":"src_SlideTransition","path":"scripts/src_SlideTransition/src_SlideTransition.yy",},"order":2,},
     {"id":{"name":"sGhostCat_Jumping","path":"sprites/sGhostCat_Jumping/sGhostCat_Jumping.yy",},"order":2,},
     {"id":{"name":"Wall_Collision_Ghost","path":"sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",},"order":2,},
     {"id":{"name":"Wall_Collision_Living","path":"sprites/Wall_Collision_Living/Wall_Collision_Living.yy",},"order":1,},
