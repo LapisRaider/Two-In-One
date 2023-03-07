@@ -6,6 +6,11 @@ function UpdateMovement() {
 	var solidCollision = place_meeting(x, y + slopeMax, O_COLLIDABLES_PARENT);
 	
 	yVel += GRAVITY;
+		
+	//if falling, just x = 0, we don't want horiSpeed for it)
+	if (yVel > 0 && !place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT)) {
+		xVel = 0;
+	}
 	
 	//moving down slopes
 	if (solidCollision && !place_meeting(x, y + slopeMax, O_COLLIDABLE_WALL) && yVel > 0) {
@@ -25,11 +30,13 @@ function UpdateMovement() {
 	if (array_length(collidedObjs) != 0 && place_meeting(x, y + yVel, O_COLLIDABLES_PARENT)) {
 		yVel = 0;
 	}
-	
 
 	//if no longer colliding with player, stop moving
-	//or if falling, just x = 0, we don't want horiSpeed for it
-	
+	var collisionLivingCat = collision_rectangle(x - INTERACTION_SIZE, y - INTERACTION_SIZE, x + INTERACTION_SIZE, y + INTERACTION_SIZE, oLivingCat, false, true);
+	var collisionGhostCat = collision_rectangle(x - INTERACTION_SIZE, y - INTERACTION_SIZE, x + INTERACTION_SIZE, y + INTERACTION_SIZE, oGhostCat, false, true);
+	if (collisionLivingCat == noone && collisionGhostCat == noone) {
+		xVel = 0;
+	}
 }
 
 

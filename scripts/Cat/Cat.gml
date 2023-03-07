@@ -1,12 +1,13 @@
 function UpdateMovement(xDir, isJump) {
 	//look for ground below us, add slopeMax so when go down slope we can still jump
 	var solidCollision = place_meeting(x, y + slopeMax, O_COLLIDABLES_PARENT);
+	var boxTopCollision = place_meeting(x, y + yVel + GROUND_THRESHOLD, oBox);
 	
 	xVel = xDir * SPEED;
 	yVel += GRAVITY;
 	
 	//if fall to ground
-	if ((place_meeting(x, y + yVel + GROUND_THRESHOLD, oBox) || place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT)) && yVel > 0) {
+	if ((boxTopCollision || place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT)) && yVel > 0) {
 		isOnGround = true;
 		if (jumpsLeft == 0) {
 			jumpsLeft = JUMP_NUMBER;
@@ -17,7 +18,7 @@ function UpdateMovement(xDir, isJump) {
 		isOnGround = false;
 	}
 	
-	if (isJump && solidCollision && jumpsLeft > 0) {
+	if (isJump && (solidCollision || boxTopCollision) && jumpsLeft > 0) {
 		yVel = -JUMP_SPEED;
 		--jumpsLeft;
 		isOnGround = false;
@@ -32,8 +33,6 @@ function UpdateMovement(xDir, isJump) {
 	
 	PushBox();
 	BasicCollision(oBox);
-	
-	 
 	
 	//move and collide
 	var collidedObjs = move_and_collide(xVel, yVel, O_COLLIDABLES_PARENT);
