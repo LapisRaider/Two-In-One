@@ -6,11 +6,15 @@ function UpdateMovement(xDir, isJump) {
 	yVel += GRAVITY;
 	
 	//if fall to ground
-	if (place_meeting(x, y + yVel, O_COLLIDABLES_PARENT) && yVel > 0) {
+	if (place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT) && yVel > 0) {
 		isOnGround = true;
 		if (jumpsLeft == 0) {
 			jumpsLeft = JUMP_NUMBER;
 		}
+	}
+	else if (yVel > 0)
+	{
+		isOnGround = false;
 	}
 	
 	if (isJump && solidCollision && jumpsLeft > 0) {
@@ -38,7 +42,7 @@ function UpdateMovement(xDir, isJump) {
 
 function UpdateAnim(xDir) {
 	if (xDir != 0) {
-		image_xscale = xDir;
+		image_xscale = ORIGINAL_SCALE_SIZE * xDir;
 	}
 	
 	if (isOnGround) {
