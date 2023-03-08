@@ -36,6 +36,7 @@
     {"name":"oLivingWall_Slope","order":5,"path":"objects/oLivingWall_Slope/oLivingWall_Slope.yy",},
     {"name":"scr_Collision","order":1,"path":"scripts/scr_Collision/scr_Collision.yy",},
     {"name":"Door","order":2,"path":"sprites/Door/Door.yy",},
+    {"name":"shader_ChangeAlphaLiving","order":1,"path":"shaders/shader_ChangeAlphaLiving/shader_ChangeAlphaLiving.yy",},
     {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"sLivingCat_Idle","order":5,"path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},
     {"name":"oGhostWall_Slope","order":3,"path":"objects/oGhostWall_Slope/oGhostWall_Slope.yy",},
