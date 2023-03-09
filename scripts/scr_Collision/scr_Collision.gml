@@ -1,4 +1,4 @@
-//ignoring slopes
+//basic collision, ignoring slopes
 function BasicCollision(objToCheck) {
 	if (place_meeting(x + xVel, y, objToCheck)) {
 		while (!place_meeting(x + sign(xVel), y, objToCheck)) {
