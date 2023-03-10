@@ -3,7 +3,7 @@ function UpdateMovement(xDir, isJump) {
 	var solidCollision = place_meeting(x, y + slopeMax, O_COLLIDABLES_PARENT);
 	var boxTopCollision = place_meeting(x, y + yVel + GROUND_THRESHOLD, oBox);
 	
-	xVel = xDir * SPEED;
+	xVel = xDir * xCurrSpeed;
 	yVel += GRAVITY;
 	
 	//if fall to ground
@@ -12,6 +12,7 @@ function UpdateMovement(xDir, isJump) {
 		if (jumpsLeft == 0) {
 			jumpsLeft = JUMP_NUMBER;
 		}
+		xCurrSpeed = SPEED;
 	}
 	else if (yVel > 0)
 	{
@@ -22,6 +23,8 @@ function UpdateMovement(xDir, isJump) {
 		yVel = -JUMP_SPEED;
 		--jumpsLeft;
 		isOnGround = false;
+
+		xCurrSpeed = XSPEED_IN_AIR;
 	}
 	
 	//moving down slopes
@@ -35,11 +38,12 @@ function UpdateMovement(xDir, isJump) {
 	BasicCollision(oBox);
 	
 	//move and collide
-	var collidedObjs = move_and_collide(xVel, yVel, O_COLLIDABLES_PARENT);
+	var collidedObjs = move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
+	var collidedObjsY = move_and_collide(0, yVel, O_COLLIDABLES_PARENT);
 	
 	//if we collide with something && it's abv us, stop players from walking on roof
 	// or if player touches on ground, just stop player
-	if (array_length(collidedObjs) != 0 && place_meeting(x, y + yVel, O_COLLIDABLES_PARENT)) {
+	if (array_length(collidedObjsY) != 0 && place_meeting(x, y + yVel, O_COLLIDABLES_PARENT)) {
 		yVel = 0;
 	}
 }
