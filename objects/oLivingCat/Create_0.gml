@@ -4,6 +4,7 @@ WALKING_ANIM_NAME = sLivingCat_Walking
 IDLE_ANIM_NAME = sLivingCat_Idle
 FALLING_ANIM_NAME = sLivingCat_Falling
 JUMPING_ANIM_NAME = sLivingCat_Jumping
+DEAD_ANIM_NAME = sLivingCat_Death
 ORIGINAL_SCALE_SIZE = 0.7
 
 SPEED = 1.2
@@ -29,3 +30,4 @@ jumpsLeft = JUMP_NUMBER
 isOnGround = true;
 
 slopeMax = 4
+isDead = false

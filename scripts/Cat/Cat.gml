@@ -78,3 +78,15 @@ function UpdateAnim(xDir) {
 		}
 	}
 }
+
+function DyingBehavior() {
+	if (isDead) {
+		sprite_index = DEAD_ANIM_NAME;
+	}
+	
+	if (image_index >= image_number - 1) {
+		image_speed = 0;
+		
+		oGameManager.StartAutoDeathCleanUp();
+	} 
+}

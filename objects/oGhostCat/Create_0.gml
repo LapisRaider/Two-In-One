@@ -25,5 +25,6 @@ xVel = 0
 yVel = 0
 jumpsLeft = JUMP_NUMBER
 isOnGround = true;
+isDead = false;
 
 slopeMax = 4
