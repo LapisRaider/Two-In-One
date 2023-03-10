@@ -19,12 +19,15 @@ function BasicPixelPerfectCollision(objToCheck) {
 }
 
 //basic collision, ignoring slopes
-function BasicPixelCollision(objToCheck) {
+function BasicCollision(objToCheck) {
 	if (place_meeting(x + xVel, y, objToCheck)) {
 		xVel = 0;
 	}
 	
 	if (place_meeting(x, y + yVel, objToCheck)) {
+		while (!place_meeting(x, y + sign(yVel) * 0.1, objToCheck)) {
+			y += sign(yVel) * 0.1;
+		}
 		yVel = 0;
 	}
 }

@@ -38,7 +38,7 @@ function UpdateMovement(xDir, isJump) {
 	BasicCollision(oBox);
 	
 	//move and collide
-	var collidedObjs = move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
+	move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
 	var collidedObjsY = move_and_collide(0, yVel, O_COLLIDABLES_PARENT);
 	
 	//if we collide with something && it's abv us, stop players from walking on roof

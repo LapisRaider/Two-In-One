@@ -2,7 +2,7 @@ function MoveInDirX(xDir, movSpeed) {
 	xVel = xDir * movSpeed;
 }
 
-function UpdateMovement() {
+function UpdateBoxMovement() {
 	var solidCollision = place_meeting(x, y + slopeMax, O_COLLIDABLES_PARENT);
 	
 	yVel += GRAVITY;
@@ -40,5 +40,4 @@ function UpdateMovement() {
 }
 
 
-
-UpdateMovement();
+UpdateBoxMovement();
