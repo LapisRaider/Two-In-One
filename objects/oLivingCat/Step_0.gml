@@ -6,8 +6,6 @@ if (global.isLivingCat && !isDead && !oGhostCat.isDead) {
 	isPressJump = keyboard_check_pressed(vk_space);
 }
 
-
-
 UpdateMovement(moveDir, isPressJump);
 
 if (isDead) {

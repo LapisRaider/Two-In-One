@@ -24,6 +24,11 @@ if (currentDeathResetTimer >= 0) {
 	return;
 }
 	
+if (keyboard_check_pressed(ord("R"))) {
+	ResetRoom();
+	
+	src_SlideTransition(TRANS_MODE.RESTART);
+}
 
 if (oLivingCat.isDead || oGhostCat.isDead) {
 	return;
@@ -33,11 +38,5 @@ if (keyboard_check_pressed(ord("X"))) {
 	global.isLivingCat = !global.isLivingCat;
 	
 	InitSwapCat();
-}
-
-if (keyboard_check_pressed(ord("R"))) {
-	ResetRoom();
-	
-	src_SlideTransition(TRANS_MODE.RESTART);
 }
 
