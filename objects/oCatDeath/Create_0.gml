@@ -1,0 +1,4 @@
+FLOAT_SPEED = 0.3
+ALPHA_SPEED = 0.01
+
+currAlpha = 0

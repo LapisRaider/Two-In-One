@@ -90,3 +90,11 @@ function DyingBehavior() {
 		oGameManager.StartAutoDeathCleanUp();
 	} 
 }
+
+function StartCatDeath() {
+	if (isDead)
+		return;
+
+	isDead = true;
+	instance_create_layer(x, y, "Instances", oCatDeath);
+}
