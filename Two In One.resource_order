@@ -32,6 +32,7 @@
     {"name":"oNormalWall","order":1,"path":"objects/oNormalWall/oNormalWall.yy",},
     {"name":"src_SlideTransition","order":2,"path":"scripts/src_SlideTransition/src_SlideTransition.yy",},
     {"name":"sGhostCat_Jumping","order":2,"path":"sprites/sGhostCat_Jumping/sGhostCat_Jumping.yy",},
+    {"name":"src_InitSwapCat","order":3,"path":"scripts/src_InitSwapCat/src_InitSwapCat.yy",},
     {"name":"Wall_Collision_Ghost","order":2,"path":"sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",},
     {"name":"Wall_Collision_Living","order":1,"path":"sprites/Wall_Collision_Living/Wall_Collision_Living.yy",},
     {"name":"Sprite3","order":15,"path":"sprites/Sprite3/Sprite3.yy",},

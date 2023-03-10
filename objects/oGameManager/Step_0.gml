@@ -15,7 +15,6 @@ function StartAutoDeathCleanUp() {
 	currentDeathResetTimer = room_speed * DEATH_TIMER_PAUSE;
 }
 
-
 if (currentDeathResetTimer >= 0) {
 	--currentDeathResetTimer;
 	if (currentDeathResetTimer == 0) {
@@ -33,8 +32,7 @@ if (oLivingCat.isDead || oGhostCat.isDead) {
 if (keyboard_check_pressed(ord("X"))) {
 	global.isLivingCat = !global.isLivingCat;
 	
-	ghostTile_alpha = global.isLivingCat ? MIN_LAYER_ALPHA : 1;
-	livingTile_alpha = global.isLivingCat ? 1 : MIN_LAYER_ALPHA;
+	InitSwapCat();
 }
 
 if (keyboard_check_pressed(ord("R"))) {
