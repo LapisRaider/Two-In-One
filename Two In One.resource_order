@@ -28,6 +28,7 @@
     {"name":"sLivingCat_Jumping","order":2,"path":"sprites/sLivingCat_Jumping/sLivingCat_Jumping.yy",},
     {"name":"oCatDeath","order":12,"path":"objects/oCatDeath/oCatDeath.yy",},
     {"name":"Room4","order":3,"path":"rooms/Room4/Room4.yy",},
+    {"name":"sGhostCat_Death","order":4,"path":"sprites/sGhostCat_Death/sGhostCat_Death.yy",},
     {"name":"oTransition","order":10,"path":"objects/oTransition/oTransition.yy",},
     {"name":"Fall_Trigger","order":3,"path":"sprites/Fall_Trigger/Fall_Trigger.yy",},
     {"name":"oGameManager","order":4,"path":"objects/oGameManager/oGameManager.yy",},

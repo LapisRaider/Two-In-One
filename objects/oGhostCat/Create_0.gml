@@ -3,6 +3,7 @@ WALKING_ANIM_NAME = sGhostCat_Walking
 IDLE_ANIM_NAME = sGhostCat_Idle
 FALLING_ANIM_NAME = sGhostCat_Falling
 JUMPING_ANIM_NAME = sGhostCat_Jumping
+DEAD_ANIM_NAME = sGhostCat_Death
 ORIGINAL_SCALE_SIZE = 0.7
 
 SPEED = 1
