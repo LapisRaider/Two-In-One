@@ -37,7 +37,7 @@
   "IncludedFiles": [],
   "isEcma": false,
   "MetaData": {
-    "IDEVersion": "2023.1.1.62",
+    "IDEVersion": "2023.1.0.58",
   },
   "resources": [
     {"id":{"name":"oLivingWall","path":"objects/oLivingWall/oLivingWall.yy",},"order":4,},
