@@ -628,7 +628,6 @@
     {"name":"inst_4A6A2419_1","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_25EAB52A_1_1","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_2740C2B0_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_250B9B61_1","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_11638B82","path":"rooms/Room3/Room3.yy",},
   ],
   "isDnd": false,
@@ -646,7 +645,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E3DEEA6_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLivingCat","path":"objects/oLivingCat/oLivingCat.yy",},"properties":[],"rotation":0.0,"scaleX":0.7,"scaleY":0.7,"x":16.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3624709B_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGhostCat","path":"objects/oGhostCat/oGhostCat.yy",},"properties":[],"rotation":0.0,"scaleX":0.7,"scaleY":0.7,"x":40.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33FD8F6F_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_250B9B61_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBox","path":"objects/oBox/oBox.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":40.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11638B82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFallDeathCollisionBox","path":"objects/oFallDeathCollisionBox/oFallDeathCollisionBox.yy",},"properties":[],"rotation":0.0,"scaleX":36.000004,"scaleY":2.0,"x":56.0,"y":184.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Normal_Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
