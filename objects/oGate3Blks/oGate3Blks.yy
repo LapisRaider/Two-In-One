@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object23",
+  "name": "oGate3Blks",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "InteractableObjects",
-    "path": "folders/Objects/InteractableObjects.yy",
+    "name": "Gates",
+    "path": "folders/Objects/InteractableObjects/Gates.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oGateParent",
+    "path": "objects/oGateParent/oGateParent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -25,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sGate3Blks",
+    "path": "sprites/sGate3Blks/sGate3Blks.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

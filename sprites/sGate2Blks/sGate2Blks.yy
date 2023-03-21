@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sMovableGate",
+  "name": "sGate2Blks",
   "bbox_bottom": 15,
   "bbox_left": 4,
   "bbox_right": 11,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Interactables",
-    "path": "folders/Sprites/Interactables.yy",
+    "name": "Gates",
+    "path": "folders/Sprites/Interactables/Gates.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sMovableGate",
+    "name": "sGate2Blks",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8de0a920-706a-4acd-b06a-e46aae74bec2","path":"sprites/sMovableGate/sMovableGate.yy",},},},"Disabled":false,"id":"4167d5c2-1214-4e6d-b30e-e18af6843997","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8de0a920-706a-4acd-b06a-e46aae74bec2","path":"sprites/sGate2Blks/sGate2Blks.yy",},},},"Disabled":false,"id":"4167d5c2-1214-4e6d-b30e-e18af6843997","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

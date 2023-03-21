@@ -1,3 +1,3 @@
-SPEED = 1.0
+SPEED = 0.2
 
 isOpen = false;

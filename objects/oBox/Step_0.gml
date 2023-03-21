@@ -21,6 +21,7 @@ function UpdateBoxMovement() {
 	
 	BasicCollision(oGhostCat);
 	BasicCollision(oLivingCat);
+	BasicCollision(oGateParent);
 	
 	//move and collide
 	var collidedObjs = move_and_collide(xVel, yVel, O_COLLIDABLES_PARENT);

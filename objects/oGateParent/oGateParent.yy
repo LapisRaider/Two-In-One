@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGate",
+  "name": "oGateParent",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "InteractableObjects",
-    "path": "folders/Objects/InteractableObjects.yy",
+    "name": "Gates",
+    "path": "folders/Objects/InteractableObjects/Gates.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,10 +31,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"yFinalPos","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "sMovableGate",
-    "path": "sprites/sMovableGate/sMovableGate.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
