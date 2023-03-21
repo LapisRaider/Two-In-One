@@ -6,6 +6,7 @@ function UpdateMovement(xDir, isJump) {
 	
 	xVel = xDir * xCurrSpeed;
 	yVel += GRAVITY;
+	yVel = min(yVel, MAX_Y_VEL);
 	
 	//if fall to ground
 	if ((gateCollision || boxTopCollision || place_meeting(x, y + yVel + GROUND_THRESHOLD, O_COLLIDABLES_PARENT)) && yVel > 0) {

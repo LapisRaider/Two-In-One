@@ -4,7 +4,7 @@ if (!isOpen && (x == xstart && y == ystart))
 if (isOpen && (x == xFinalPos && y == yFinalPos))
 	return;
 
-var xDir = sign(xstart - xFinalPos);
+var xDir = sign(xFinalPos - xstart);
 var yDir = sign(yFinalPos - ystart); //positive dir is down
 
 // go opposite direction
@@ -13,8 +13,15 @@ if (!isOpen) {
 	yDir *= -1;
 }
 
-x += xDir * SPEED;
-y += yDir * SPEED;
+xVel = xDir * SPEED;
+yVel = yDir * SPEED;
+
+BasicCollision(oBox);
+BasicCollision(oLivingCat);
+BasicCollision(oGhostCat);
+
+x += xVel;
+y += yVel;
 
 //clamp positions
 if (xFinalPos < xstart) 
@@ -26,4 +33,5 @@ else
 if (yFinalPos < ystart) 
 	y = clamp(y, yFinalPos, ystart);
 else 
-	y = clamp(y, ystart, xFinalPos);
+	y = clamp(y, ystart, yFinalPos);
+
