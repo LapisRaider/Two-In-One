@@ -19,6 +19,7 @@ yVel = yDir * SPEED;
 BasicCollision(oBox);
 BasicCollision(oLivingCat);
 BasicCollision(oGhostCat);
+BasicCollision(oEnemy);
 
 x += xVel;
 y += yVel;
