@@ -55,6 +55,7 @@
     {"name":"shader_ChangeAlphaLiving","order":1,"path":"shaders/shader_ChangeAlphaLiving/shader_ChangeAlphaLiving.yy",},
     {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"sLivingCat_Idle","order":1,"path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},
+    {"name":"Room7","order":6,"path":"rooms/Room7/Room7.yy",},
     {"name":"oGhostWall_Slope","order":3,"path":"objects/oGhostWall_Slope/oGhostWall_Slope.yy",},
     {"name":"oLivingFish","order":1,"path":"objects/oLivingFish/oLivingFish.yy",},
     {"name":"oNormalWall_Parent","order":2,"path":"objects/oNormalWall_Parent/oNormalWall_Parent.yy",},
