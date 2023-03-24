@@ -35,6 +35,9 @@
     "name": "sEnemy_Walk",
     "path": "sprites/sEnemy_Walk/sEnemy_Walk.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sEnemy_Idle",
+    "path": "sprites/sEnemy_Idle/sEnemy_Idle.yy",
+  },
   "visible": true,
 }
