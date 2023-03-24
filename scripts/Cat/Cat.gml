@@ -40,6 +40,7 @@ function UpdateMovement(xDir, isJump) {
 	BasicCollision(oBox);
 	BasicCollision(oGateParent);
 	
+	
 	//move and collide
 	move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
 	var collidedObjsY = move_and_collide(0, yVel, O_COLLIDABLES_PARENT);

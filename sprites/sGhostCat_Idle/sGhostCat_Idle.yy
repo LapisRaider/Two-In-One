@@ -30,7 +30,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15ad6068-e55c-4855-84c9-2a02662eb7d6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "GhostCat",
     "path": "folders/Sprites/GhostCat.yy",
@@ -73,7 +73,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 11,
+    "xorigin": 13,
     "yorigin": 8,
   },
   "swatchColours": null,

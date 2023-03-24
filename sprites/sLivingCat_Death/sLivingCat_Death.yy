@@ -34,7 +34,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c5788b88-10a3-4d7e-a379-592126dbc36e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "LivingCat",
     "path": "folders/Sprites/LivingCat.yy",
@@ -82,7 +82,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 15,
-    "yorigin": 9,
+    "yorigin": 11,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

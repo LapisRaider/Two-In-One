@@ -25,8 +25,8 @@ function BasicCollision(objToCheck) {
 	}
 	
 	if (place_meeting(x, y + yVel, objToCheck)) {
-		while (!place_meeting(x, y + sign(yVel) * 0.1, objToCheck)) {
-			y += sign(yVel) * 0.1;
+		while (!place_meeting(x, y + (sign(yVel) * 0.01), objToCheck)) {
+			y += sign(yVel) * 0.01;
 		}
 		yVel = 0;
 	}
