@@ -70,6 +70,7 @@
     {"name":"sLivingCat_Death","order":4,"path":"sprites/sLivingCat_Death/sLivingCat_Death.yy",},
     {"name":"oBox","order":3,"path":"objects/oBox/oBox.yy",},
     {"name":"sGhostCat_Walking","order":3,"path":"sprites/sGhostCat_Walking/sGhostCat_Walking.yy",},
+    {"name":"oFishParent","order":9,"path":"objects/oFishParent/oFishParent.yy",},
     {"name":"sGate3Blks","order":1,"path":"sprites/sGate3Blks/sGate3Blks.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"TEST","order":2,"path":"rooms/TEST/TEST.yy",},
