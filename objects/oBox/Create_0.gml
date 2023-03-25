@@ -5,7 +5,9 @@ O_COLLIDABLE_SLOPE = oNormalWall_Slope;
 O_COLLIDABLE_WALL = oNormalWall;
 INTERACTION_SIZE = 0;
 GROUND_THRESHOLD = 0.1;
+COLLISION_TOP_OFFSET = 10;
 
 xVel = 0;
+xFollowVel = 0; //if it's on something
 yVel = 0;
 slopeMax = 4;
