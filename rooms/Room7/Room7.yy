@@ -563,6 +563,7 @@
     {"name":"inst_7A6B0E34","path":"rooms/Room7/Room7.yy",},
     {"name":"inst_6A566B2C","path":"rooms/Room7/Room7.yy",},
     {"name":"inst_3D8B269E","path":"rooms/Room7/Room7.yy",},
+    {"name":"inst_666AD213","path":"rooms/Room7/Room7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -597,6 +598,10 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"min_xPos","path":"objects/oEnemy/oEnemy.yy",},"value":"180",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"max_xPos","path":"objects/oEnemy/oEnemy.yy",},"value":"250",},
           ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":216.0,"y":24.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_666AD213","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"min_xPos","path":"objects/oEnemy/oEnemy.yy",},"value":"55",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"max_xPos","path":"objects/oEnemy/oEnemy.yy",},"value":"105",},
+          ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":80.0,"y":136.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Normal_Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29C4C1A1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oNormalWall","path":"objects/oNormalWall/oNormalWall.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":64.0,"y":176.0,},
