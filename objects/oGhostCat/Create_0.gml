@@ -25,6 +25,7 @@ O_BOX = oBox
 xCurrSpeed = SPEED
 xVel = 0
 yVel = 0
+moveDir = 0
 jumpsLeft = JUMP_NUMBER
 isOnGround = true;
 isDead = false;

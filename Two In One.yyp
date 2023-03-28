@@ -97,6 +97,7 @@
     {"id":{"name":"sLivingFish","path":"sprites/sLivingFish/sLivingFish.yy",},"order":1,},
     {"id":{"name":"LevelSelection","path":"rooms/LevelSelection/LevelSelection.yy",},"order":9,},
     {"id":{"name":"oRoundRect","path":"objects/oRoundRect/oRoundRect.yy",},"order":8,},
+    {"id":{"name":"oUndoManager","path":"objects/oUndoManager/oUndoManager.yy",},"order":15,},
     {"id":{"name":"sLivingCat_Idle","path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},"order":1,},
     {"id":{"name":"Room7","path":"rooms/Room7/Room7.yy",},"order":6,},
     {"id":{"name":"sSpace","path":"sprites/sSpace/sSpace.yy",},"order":3,},

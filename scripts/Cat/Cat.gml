@@ -102,3 +102,18 @@ function StartCatDeath() {
 	isDead = true;
 	instance_create_layer(x, y, "Instances", oCatDeath);
 }
+
+function UpdateTracker(xDir, isJump) {
+	if (isOnGround) {
+		var nextMove = possibleMoves.NOTHING;
+		if (xDir > 0) {
+			nextMove = possibleMoves.RIGHT;
+		} else if (xDir < 0) {
+			nextMove = possibleMoves.LEFT;
+		}
+		
+		oUndoManager.StartTrack(nextMove);
+	} else if (isJump) {
+		oUndoManager.StartTrack(possibleMoves.JUMP);
+	}
+}

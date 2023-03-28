@@ -73,6 +73,7 @@
     {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"LevelSelection","order":9,"path":"rooms/LevelSelection/LevelSelection.yy",},
     {"name":"oRoundRect","order":8,"path":"objects/oRoundRect/oRoundRect.yy",},
+    {"name":"oUndoManager","order":15,"path":"objects/oUndoManager/oUndoManager.yy",},
     {"name":"sLivingCat_Idle","order":1,"path":"sprites/sLivingCat_Idle/sLivingCat_Idle.yy",},
     {"name":"Room7","order":6,"path":"rooms/Room7/Room7.yy",},
     {"name":"sSpace","order":3,"path":"sprites/sSpace/sSpace.yy",},

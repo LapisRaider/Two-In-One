@@ -1,4 +1,5 @@
 if (global.currFishesCollected < global.totalFishesInLevel) {
+	image_index = 0;
 	return;
 }
 
