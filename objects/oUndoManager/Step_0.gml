@@ -38,6 +38,20 @@ function StartTrack(moveDone) {
 		ds_list_add(dataToTrack.boxes, boxData);
 	}
 	
+	dataToTrack.gates = ds_list_create();
+	for (var i = 0; i < instance_number(oGateParent); ++i;) {
+		var gate = instance_find(oGateParent, i);
+		var gateData = new GateData(gate.x, gate.y, gate.isOpen, i);
+		ds_list_add(dataToTrack.gates, gateData);
+	}
+	
+	dataToTrack.enemies = ds_list_create();
+	for (var i = 0; i < instance_number(oEnemy); ++i;) {
+		var enemy = instance_find(oEnemy, i);
+		var enemyData = new EnemyData(enemy.x, enemy.y, enemy.isAttacking, i);
+		ds_list_add(dataToTrack.enemies, enemyData);
+	}
+	
 	dataToTrack.moveDone = moveDone;
 	dataToTrack.isLivingCat = global.isLivingCat;
 	
@@ -88,11 +102,20 @@ function PopLast() {
 		}
 	}
 	
-	for (var i = 0; i < ds_list_size(dataToTrack.boxes); ++i;) {
-		var boxData = ds_list_find_value(dataToTrack.boxes, i);
-		var box = instance_find(oBox, boxData.objId);
-		box.x = boxData.xPos;
-		box.y = boxData.yPos;
+	for (var i = 0; i < ds_list_size(dataToTrack.enemies); ++i;) {
+		var enemyData = ds_list_find_value(dataToTrack.enemies, i);
+		var enemy = instance_find(oEnemy, enemyData.objId);
+		enemy.x = enemyData.xPos;
+		enemy.y = enemyData.yPos;
+		enemy.isAttacking = enemyData.isAttacking;
+	}
+	
+	for (var i = 0; i < ds_list_size(dataToTrack.gates); ++i;) {
+		var gateData = ds_list_find_value(dataToTrack.gates, i);
+		var gate = instance_find(oGateParent, gateData.objId);
+		gate.x = gateData.xPos;
+		gate.y = gateData.yPos;
+		gate.isOpen = gateData.isOpen;
 	}
 	
 	global.isLivingCat = dataToTrack.isLivingCat;

@@ -20,6 +20,20 @@ function BoxData(_x, _y, _objId) constructor {
 	objId = _objId;
 }
 
+function GateData(_x, _y, _isOpen, _objId) constructor {
+	xPos = _x;
+	yPos = _y;
+	isOpen = _isOpen;
+	objId = _objId;
+}
+
+function EnemyData(_x, _y, _isAttacking, _objId) constructor {
+	xPos = _x;
+	yPos = _y;
+	isAttacking = _isAttacking;
+	objId = _objId;
+}
+
 enum possibleMoves {
 	NOTHING = 0, 
 	RIGHT,
@@ -33,6 +47,8 @@ function DataToTrack() constructor{
 	livingFishes = noone;
 	ghostFishes = noone;
 	boxes = noone;
+	enemies = noone;
+	gates = noone;
 	
 	moveDone = possibleMoves.NOTHING;
 	isLivingCat = true;
