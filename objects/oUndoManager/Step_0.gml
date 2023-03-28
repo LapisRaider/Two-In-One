@@ -65,7 +65,7 @@ function PopLast() {
 		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
 		var ghostFish = instance_find(oGhostFish, fish.objId);
 		if (ghostFish == noone) {
-			instance_create_layer(fish.xPos, fish.yPos, "Instances", oGhostFish);
+			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oGhostFish);
 			inst.image_xscale = fish.scaleX;
 			inst.image_yscale = fish.scaleY;
 		}

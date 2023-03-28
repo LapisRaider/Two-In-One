@@ -14,6 +14,12 @@ function FishData(_x, _y, _scaleX, _scaleY, _objId) constructor{
 	objId = _objId;
 }
 
+function BoxData(_x, _y, _objId) constructor {
+	xPos = _x;
+	yPos = _y;
+	objId = _objId;
+}
+
 enum possibleMoves {
 	NOTHING = 0, 
 	RIGHT,
@@ -26,6 +32,7 @@ function DataToTrack() constructor{
 	ghostCat = noone;
 	livingFishes = noone;
 	ghostFishes = noone;
+	boxes = noone;
 	
 	moveDone = possibleMoves.NOTHING;
 	isLivingCat = true;
