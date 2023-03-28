@@ -98,6 +98,10 @@ function PopLast() {
 	global.isLivingCat = dataToTrack.isLivingCat;
 	InitSwapCat();
 	
+	if (oLivingCat.isDead || oGhostCat.isDead) {
+		oGameManager.UndoWhenDead();
+	}
+	
 	delete dataToTrack;
 	undoTracker[tail] = noone;
 	tail -= 1;

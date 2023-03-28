@@ -15,14 +15,18 @@ function StartAutoDeathCleanUp() {
 	currentDeathResetTimer = room_speed * DEATH_TIMER_PAUSE;
 }
 
+function UndoWhenDead() {
+	oLivingCat.ReviveCat();
+	oGhostCat.ReviveCat();
+	currentDeathResetTimer = -1;
+}
+
 if (currentDeathResetTimer >= 0) {
 	--currentDeathResetTimer;
 	if (currentDeathResetTimer == 0) {
 		if (oUndoManager.sizeCounter != 0) {
 			src_SlideTransition(TRANS_MODE.UNDO_DEATH);
-			oLivingCat.ReviveCat();
-			oGhostCat.ReviveCat();
-			currentDeathResetTimer = -1;
+			UndoWhenDead();
 		} else {
 			ResetRoom();
 			src_SlideTransition(TRANS_MODE.RESTART);
