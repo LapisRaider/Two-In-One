@@ -1,10 +1,28 @@
+function UpdateUI() {
+	var currUndoData = head;
+	for (var i = 0; i < sizeCounter; ++i;) {
+		var uiIconInst = instance_find(oUndoState, i);
+		if (uiIconInst == noone) {
+			continue;
+		}
+		
+		uiIconInst.ChangeSprite(undoTracker[currUndoData].moveDone, undoTracker[currUndoData].isLivingCat);
+		currUndoData += 1;
+		currUndoData = currUndoData % MAX_QUEUE_AMT;
+	}
+	
+	//the remaining
+	for (var i = sizeCounter; i < MAX_QUEUE_AMT; ++i;) {
+		var uiIconInst = instance_find(oUndoState, i);
+		
+		uiIconInst.ChangeSprite(noone, noone, false);
+	}
+}
+
 function StartTrack(moveDone) {
 	if (lastMove == moveDone) {
 		return;
 	}
-	
-	show_debug_message("lastMove {0}", lastMove);
-	show_debug_message("moveDone {0}", moveDone);
 	
 	lastMove = moveDone;
 	if (lastMove == possibleMoves.NOTHING) {
@@ -56,15 +74,19 @@ function StartTrack(moveDone) {
 	dataToTrack.isLivingCat = global.isLivingCat;
 	
 	//if data structure is full, remove the earliest and put in the latest
-	tail += 1;
 	sizeCounter += 1;
-	tail = tail % MAX_QUEUE_AMT;
-	if (sizeCounter >= MAX_QUEUE_AMT) {
+	if (sizeCounter > MAX_QUEUE_AMT) {
 		sizeCounter = MAX_QUEUE_AMT;
 		head += 1;
+		head = head % MAX_QUEUE_AMT;
 	}
 	
+	tail += 1;
+	tail = tail % MAX_QUEUE_AMT;
 	undoTracker[tail] = dataToTrack;
+
+	
+	UpdateUI();
 }
 
 // pop the latest, if queue
@@ -128,11 +150,14 @@ function PopLast() {
 	delete dataToTrack;
 	undoTracker[tail] = noone;
 	tail -= 1;
-	if (tail < 0) {
-		tail = MAX_QUEUE_AMT - 1;
-	}
 	sizeCounter -= 1;
+	if (tail < 0 and sizeCounter > 0) {
+		tail = MAX_QUEUE_AMT;
+	}
+	
+	UpdateUI();
 }
+
 
 // check if players press undo
 if (keyboard_check_pressed(ord("U"))) {

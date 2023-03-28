@@ -89,6 +89,7 @@
     {"name":"sLivingCat_Walking","order":3,"path":"sprites/sLivingCat_Walking/sLivingCat_Walking.yy",},
     {"name":"sRight","order":2,"path":"sprites/sRight/sRight.yy",},
     {"name":"sLivingCat_Death","order":4,"path":"sprites/sLivingCat_Death/sLivingCat_Death.yy",},
+    {"name":"oUndoState","order":11,"path":"objects/oUndoState/oUndoState.yy",},
     {"name":"oBox","order":3,"path":"objects/oBox/oBox.yy",},
     {"name":"sGhostCat_Walking","order":3,"path":"sprites/sGhostCat_Walking/sGhostCat_Walking.yy",},
     {"name":"oFishParent","order":9,"path":"objects/oFishParent/oFishParent.yy",},

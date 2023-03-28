@@ -57,7 +57,7 @@ function DataToTrack() constructor{
 MAX_QUEUE_AMT = 5;
 undoTracker = array_create(MAX_QUEUE_AMT, noone);
 head = 0
-tail = 0
+tail = -1
 sizeCounter = 0
 
 lastMove = possibleMoves.NOTHING;
