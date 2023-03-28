@@ -30,7 +30,14 @@ function StartTrack(moveDone) {
 		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i);
 		ds_list_add(dataToTrack.livingFishes, livingFish);
 	}
-
+	
+	dataToTrack.boxes = ds_list_create();
+	for (var i = 0; i < instance_number(oBox); ++i;) {
+		var box = instance_find(oBox, i);
+		var boxData = new BoxData(box.x, box.y, i);
+		ds_list_add(dataToTrack.boxes, boxData);
+	}
+	
 	dataToTrack.moveDone = moveDone;
 	dataToTrack.isLivingCat = global.isLivingCat;
 	
@@ -79,6 +86,13 @@ function PopLast() {
 			inst.image_xscale = fish.scaleX;
 			inst.image_yscale = fish.scaleY;
 		}
+	}
+	
+	for (var i = 0; i < ds_list_size(dataToTrack.boxes); ++i;) {
+		var boxData = ds_list_find_value(dataToTrack.boxes, i);
+		var box = instance_find(oBox, boxData.objId);
+		box.x = boxData.xPos;
+		box.y = boxData.yPos;
 	}
 	
 	global.isLivingCat = dataToTrack.isLivingCat;
