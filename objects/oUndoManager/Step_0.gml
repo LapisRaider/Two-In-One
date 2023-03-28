@@ -62,18 +62,22 @@ function PopLast() {
 	oGhostCat.moveDir = dataToTrack.ghostCat.moveDir;
 	
 	for (var i = 0; i < ds_list_size(dataToTrack.ghostFishes); ++i;) {
-		var ghostFish = instance_find(oGhostFish, dataToTrack.ghostFishes[i].objId);
+		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
+		var ghostFish = instance_find(oGhostFish, fish.objId);
 		if (ghostFish == noone) {
 			instance_create_layer(dataToTrack.ghostFishes[i].x, dataToTrack.ghostFishes[i].y, "Instances", oGhostFish);
 		}
 	}
 	
 	for (var i = 0; i < ds_list_size(dataToTrack.livingFishes); ++i;) {
-		var livingFish = instance_find(oLivingFish, dataToTrack.ghostFishes[i].objId);
+		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
+		var livingFish = instance_find(oLivingFish, fish.objId);
 		if (livingFish == noone) {
 			instance_create_layer(dataToTrack.livingFishes[i].x, dataToTrack.livingFishes[i].y, "Instances", oLivingFish);
 		}
 	}
+	
+	global.isLivingCat = dataToTrack.isLivingCat;
 	
 	delete dataToTrack;
 	undoTracker[tail] = noone;

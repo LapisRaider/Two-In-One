@@ -7,7 +7,11 @@ if (!global.isLivingCat && !isDead && !oLivingCat.isDead) {
 }
 
 UpdateMovement(moveDir, isPressJump);
-UpdateTracker(moveDir, isPressJump);
+
+if (!global.isLivingCat) {
+	UpdateTracker(moveDir, isPressJump);
+}
+
 
 if (isDead) {
 	DyingBehavior();

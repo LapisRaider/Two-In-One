@@ -8,7 +8,10 @@ if (global.isLivingCat && !isDead && !oGhostCat.isDead) {
 }
 
 UpdateMovement(moveDir, isPressJump);
-UpdateTracker(moveDir, isPressJump);
+if (global.isLivingCat) {
+	UpdateTracker(moveDir, isPressJump);
+}
+
 
 
 if (isDead) {
