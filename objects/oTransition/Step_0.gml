@@ -34,6 +34,11 @@ if (mode != TRANS_MODE.OFF) {
 				room_restart();
 				break;
 			}
+			case TRANS_MODE.UNDO_DEATH: {
+				mode = TRANS_MODE.INTRO;
+				oUndoManager.PopLast();
+				break;
+			}
 		}
 	}
 }

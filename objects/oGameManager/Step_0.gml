@@ -18,8 +18,16 @@ function StartAutoDeathCleanUp() {
 if (currentDeathResetTimer >= 0) {
 	--currentDeathResetTimer;
 	if (currentDeathResetTimer == 0) {
-		ResetRoom();
-		src_SlideTransition(TRANS_MODE.RESTART);
+		if (oUndoManager.sizeCounter != 0) {
+			src_SlideTransition(TRANS_MODE.UNDO_DEATH);
+			oLivingCat.ReviveCat();
+			oGhostCat.ReviveCat();
+			currentDeathResetTimer = -1;
+		} else {
+			ResetRoom();
+			src_SlideTransition(TRANS_MODE.RESTART);
+		}
+
 	}
 	return;
 }

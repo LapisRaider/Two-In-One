@@ -30,6 +30,7 @@ yVel = 0
 moveDir = 0
 jumpsLeft = JUMP_NUMBER
 isOnGround = true;
+originalImageSpeed = image_speed;
 
 slopeMax = 4
 isDead = false

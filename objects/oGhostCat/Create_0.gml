@@ -29,5 +29,6 @@ moveDir = 0
 jumpsLeft = JUMP_NUMBER
 isOnGround = true;
 isDead = false;
+originalImageSpeed = image_speed;
 
 slopeMax = 4

@@ -1,3 +1,8 @@
+function ReviveCat() {
+	image_speed = originalImageSpeed;
+	isDead = false;
+}
+
 moveDir = 0;
 var isPressJump = false;
 

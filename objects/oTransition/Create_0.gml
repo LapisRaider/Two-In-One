@@ -8,7 +8,8 @@ enum TRANS_MODE {
 	NEXT,
 	GOTO,
 	RESTART,
-	INTRO
+	INTRO,
+	UNDO_DEATH,
 } 
 mode = TRANS_MODE.INTRO;
 percent = 1; //for transition fade animation
