@@ -601,6 +601,7 @@
     {"name":"inst_353FE00D","path":"rooms/Room7/Room7.yy",},
     {"name":"inst_76BEFFDB","path":"rooms/Room7/Room7.yy",},
     {"name":"inst_37CEBBFF","path":"rooms/Room7/Room7.yy",},
+    {"name":"inst_38024172","path":"rooms/Room7/Room7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -673,6 +674,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_88A92A9","colour":4294967141,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"propertyId":{"name":"inst_gate","path":"objects/oButton/oButton.yy",},"value":"inst_Lvl7BlueGate",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":152.0,"y":40.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38024172","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oUndoManager","path":"objects/oUndoManager/oUndoManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Normal_Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29C4C1A1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oNormalWall","path":"objects/oNormalWall/oNormalWall.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":64.0,"y":176.0,},
