@@ -34,6 +34,7 @@
     {"name":"oRButton","order":3,"path":"objects/oRButton/oRButton.yy",},
     {"name":"sEnemy_Idle","order":2,"path":"sprites/sEnemy_Idle/sEnemy_Idle.yy",},
     {"name":"sLeft","order":1,"path":"sprites/sLeft/sLeft.yy",},
+    {"name":"LevelSelection","order":9,"path":"rooms/LevelSelection/LevelSelection.yy",},
     {"name":"oCatDeath","order":12,"path":"objects/oCatDeath/oCatDeath.yy",},
     {"name":"sXButton","order":4,"path":"sprites/sXButton/sXButton.yy",},
     {"name":"Room4","order":3,"path":"rooms/Room4/Room4.yy",},

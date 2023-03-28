@@ -51,6 +51,7 @@
     {"id":{"name":"oRButton","path":"objects/oRButton/oRButton.yy",},"order":3,},
     {"id":{"name":"sEnemy_Idle","path":"sprites/sEnemy_Idle/sEnemy_Idle.yy",},"order":2,},
     {"id":{"name":"sLeft","path":"sprites/sLeft/sLeft.yy",},"order":1,},
+    {"id":{"name":"LevelSelection","path":"rooms/LevelSelection/LevelSelection.yy",},"order":9,},
     {"id":{"name":"oCatDeath","path":"objects/oCatDeath/oCatDeath.yy",},"order":12,},
     {"id":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"order":0,},
     {"id":{"name":"sXButton","path":"sprites/sXButton/sXButton.yy",},"order":4,},
@@ -144,6 +145,7 @@
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
+    {"roomId":{"name":"LevelSelection","path":"rooms/LevelSelection/LevelSelection.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
