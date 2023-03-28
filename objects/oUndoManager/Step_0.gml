@@ -20,14 +20,14 @@ function StartTrack(moveDone) {
 	dataToTrack.ghostFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oGhostFish); ++i;) {
 		var fish = instance_find(oGhostFish, i);
-		var ghostFish = new FishData(fish.x, fish.y, i);
+		var ghostFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i);
 		ds_list_add(dataToTrack.ghostFishes, ghostFish);
 	}
 	
 	dataToTrack.livingFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oLivingFish); ++i;) {
 		var fish = instance_find(oLivingFish, i);
-		var livingFish = new FishData(fish.x, fish.y, i);
+		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i);
 		ds_list_add(dataToTrack.livingFishes, livingFish);
 	}
 
@@ -65,19 +65,24 @@ function PopLast() {
 		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
 		var ghostFish = instance_find(oGhostFish, fish.objId);
 		if (ghostFish == noone) {
-			instance_create_layer(dataToTrack.ghostFishes[i].x, dataToTrack.ghostFishes[i].y, "Instances", oGhostFish);
+			instance_create_layer(fish.xPos, fish.yPos, "Instances", oGhostFish);
+			inst.image_xscale = fish.scaleX;
+			inst.image_yscale = fish.scaleY;
 		}
 	}
 	
 	for (var i = 0; i < ds_list_size(dataToTrack.livingFishes); ++i;) {
-		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
+		var fish = ds_list_find_value(dataToTrack.livingFishes, i);
 		var livingFish = instance_find(oLivingFish, fish.objId);
 		if (livingFish == noone) {
-			instance_create_layer(dataToTrack.livingFishes[i].x, dataToTrack.livingFishes[i].y, "Instances", oLivingFish);
+			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oLivingFish);
+			inst.image_xscale = fish.scaleX;
+			inst.image_yscale = fish.scaleY;
 		}
 	}
 	
 	global.isLivingCat = dataToTrack.isLivingCat;
+	InitSwapCat();
 	
 	delete dataToTrack;
 	undoTracker[tail] = noone;
