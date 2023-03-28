@@ -1,0 +1,1 @@
+originalColor = image_blend

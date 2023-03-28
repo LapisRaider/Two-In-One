@@ -1,0 +1,1 @@
+src_SlideTransition(TRANS_MODE.GOTO, nextRoom);
