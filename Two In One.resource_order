@@ -69,6 +69,7 @@
     {"name":"sCat_FallDeath","order":6,"path":"sprites/sCat_FallDeath/sCat_FallDeath.yy",},
     {"name":"Room6","order":7,"path":"rooms/Room6/Room6.yy",},
     {"name":"oRightButton","order":6,"path":"objects/oRightButton/oRightButton.yy",},
+    {"name":"fBody","order":1,"path":"fonts/fBody/fBody.yy",},
     {"name":"shader_ChangeAlphaLiving","order":1,"path":"shaders/shader_ChangeAlphaLiving/shader_ChangeAlphaLiving.yy",},
     {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"LevelSelection","order":9,"path":"rooms/LevelSelection/LevelSelection.yy",},
