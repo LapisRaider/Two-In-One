@@ -6,12 +6,13 @@ function CatData(_x, _y, _moveDir) constructor {
 
 //need to know whether it was alive prior to the undo
 //if fish alive it'll be here
-function FishData(_x, _y, _scaleX, _scaleY, _objId) constructor{
+function FishData(_x, _y, _scaleX, _scaleY, _objId, _showText) constructor{
 	xPos = _x;
 	yPos = _y;
 	scaleX = _scaleX;
 	scaleY = _scaleY;
 	objId = _objId;
+	showCollectText = _showText;
 }
 
 function BoxData(_x, _y, _objId) constructor {
