@@ -139,6 +139,7 @@
     {"id":{"name":"Cat","path":"scripts/Cat/Cat.yy",},},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},},
     {"id":{"name":"oGhostWall","path":"objects/oGhostWall/oGhostWall.yy",},},
+    {"id":{"name":"OrangeCatBackground","path":"sprites/OrangeCatBackground/OrangeCatBackground.yy",},},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
