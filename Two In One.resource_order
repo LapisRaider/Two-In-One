@@ -65,7 +65,6 @@
     {"name":"scr_Collision","order":1,"path":"scripts/scr_Collision/scr_Collision.yy",},
     {"name":"Door","order":2,"path":"sprites/Door/Door.yy",},
     {"name":"oGate2Blks","order":1,"path":"objects/oGate2Blks/oGate2Blks.yy",},
-    {"name":"WhiteCatBackground","order":18,"path":"sprites/WhiteCatBackground/WhiteCatBackground.yy",},
     {"name":"Room5","order":5,"path":"rooms/Room5/Room5.yy",},
     {"name":"sCat_FallDeath","order":6,"path":"sprites/sCat_FallDeath/sCat_FallDeath.yy",},
     {"name":"Room6","order":7,"path":"rooms/Room6/Room6.yy",},
