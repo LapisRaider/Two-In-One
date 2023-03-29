@@ -14,6 +14,9 @@ function UpdateUI() {
 	//the remaining
 	for (var i = sizeCounter; i < MAX_QUEUE_AMT; ++i;) {
 		var uiIconInst = instance_find(oUndoState, i);
+		if (uiIconInst == noone) {
+			continue;
+		}
 		
 		uiIconInst.ChangeSprite(noone, noone, false);
 	}

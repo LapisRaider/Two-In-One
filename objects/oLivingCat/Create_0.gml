@@ -5,7 +5,7 @@ IDLE_ANIM_NAME = sLivingCat_Idle
 FALLING_ANIM_NAME = sLivingCat_Falling
 JUMPING_ANIM_NAME = sLivingCat_Jumping
 DEAD_ANIM_NAME = sLivingCat_Death
-ORIGINAL_SCALE_SIZE = 0.7
+ORIGINAL_SCALE_SIZE = image_xscale
 
 SPEED = 1.2
 XSPEED_IN_AIR = 1.5
