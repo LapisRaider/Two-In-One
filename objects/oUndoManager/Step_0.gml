@@ -157,7 +157,7 @@ function PopLast() {
 	tail -= 1;
 	sizeCounter -= 1;
 	if (tail < 0 and sizeCounter > 0) {
-		tail = MAX_QUEUE_AMT;
+		tail = MAX_QUEUE_AMT - 1;
 	}
 	
 	UpdateUI();
