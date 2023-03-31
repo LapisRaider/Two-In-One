@@ -572,9 +572,7 @@
     {"name":"inst_654E3F64","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_BrownGate","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_GreenGate1","path":"rooms/Room5/Room5.yy",},
-    {"name":"inst_GreenGate2","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_2C13D394","path":"rooms/Room5/Room5.yy",},
-    {"name":"inst_52E34E36","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_5C619C5C","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_4731D332","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_4BB1BD60","path":"rooms/Room5/Room5.yy",},
@@ -642,15 +640,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"propertyId":{"name":"yFinalPos","path":"objects/oGateParent/oGateParent.yy",},"value":"140",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"propertyId":{"name":"xFinalPos","path":"objects/oGateParent/oGateParent.yy",},"value":"-16",},
           ],"rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":8.0,"y":140.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_GreenGate2","colour":4279280384,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGate3Blks","path":"objects/oGate3Blks/oGate3Blks.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"propertyId":{"name":"yFinalPos","path":"objects/oGateParent/oGateParent.yy",},"value":"60",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"propertyId":{"name":"xFinalPos","path":"objects/oGateParent/oGateParent.yy",},"value":"224",},
-          ],"rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":60.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C13D394","colour":4282760192,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"propertyId":{"name":"inst_gate","path":"objects/oButton/oButton.yy",},"value":"inst_GreenGate1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":292.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52E34E36","colour":4282760192,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"propertyId":{"name":"inst_gate","path":"objects/oButton/oButton.yy",},"value":"inst_GreenGate2",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":292.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C619C5C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":168.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B3AC20D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oUndoManager","path":"objects/oUndoManager/oUndoManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
