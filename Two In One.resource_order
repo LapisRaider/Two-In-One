@@ -52,7 +52,6 @@
     {"name":"sButton","order":5,"path":"sprites/sButton/sButton.yy",},
     {"name":"src_InitSwapCat","order":3,"path":"scripts/src_InitSwapCat/src_InitSwapCat.yy",},
     {"name":"oText","order":2,"path":"objects/oText/oText.yy",},
-    {"name":"WhiteCatBackground","order":18,"path":"sprites/WhiteCatBackground/WhiteCatBackground.yy",},
     {"name":"Sprite27","order":1,"path":"sprites/Sprite27/Sprite27.yy",},
     {"name":"oEnemy","order":13,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"Wall_Collision_Ghost","order":2,"path":"sprites/Wall_Collision_Ghost/Wall_Collision_Ghost.yy",},
