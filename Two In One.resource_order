@@ -73,6 +73,7 @@
     {"name":"oLivingWall_Slope","order":5,"path":"objects/oLivingWall_Slope/oLivingWall_Slope.yy",},
     {"name":"oButton","order":6,"path":"objects/oButton/oButton.yy",},
     {"name":"scr_Collision","order":1,"path":"scripts/scr_Collision/scr_Collision.yy",},
+    {"name":"oQuitDoor","order":15,"path":"objects/oQuitDoor/oQuitDoor.yy",},
     {"name":"sCross","order":7,"path":"sprites/sCross/sCross.yy",},
     {"name":"oIconButton","order":12,"path":"objects/oIconButton/oIconButton.yy",},
     {"name":"Door","order":2,"path":"sprites/Door/Door.yy",},
@@ -123,5 +124,6 @@
     {"name":"Box","order":3,"path":"sprites/Box/Box.yy",},
     {"name":"oGhostWall","order":2,"path":"objects/oGhostWall/oGhostWall.yy",},
     {"name":"sTiles","order":4,"path":"sprites/sTiles/sTiles.yy",},
+    {"name":"oUndoButton","order":16,"path":"objects/oUndoButton/oUndoButton.yy",},
   ],
 }
