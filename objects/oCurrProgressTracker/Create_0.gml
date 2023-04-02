@@ -1,0 +1,1 @@
+global.maxLevel = 1;

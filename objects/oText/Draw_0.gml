@@ -1,3 +1,6 @@
+if (!showText)
+	return;
+
 draw_set_font(currFont)
 draw_set_valign(vertAlignment)
 draw_set_halign(alignment)
