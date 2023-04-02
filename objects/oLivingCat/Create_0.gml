@@ -5,7 +5,7 @@ IDLE_ANIM_NAME = sLivingCat_Idle
 FALLING_ANIM_NAME = sLivingCat_Falling
 JUMPING_ANIM_NAME = sLivingCat_Jumping
 DEAD_ANIM_NAME = sLivingCat_Death
-ORIGINAL_SCALE_SIZE = image_xscale
+
 
 SPEED = 1.2
 XSPEED_IN_AIR = 1.5
@@ -21,6 +21,7 @@ O_COLLIDABLE_WALL = oLivingWall
 O_COLLIDABLE_SLOPE = oLivingWall_Slope
 O_BOX = oBox
 
+ORIGINAL_SCALE_SIZE = abs(image_xscale)
 
 
 //VARIABLES THAT WILL CHANGE IN RUN TIME FOR LIVING CAT 

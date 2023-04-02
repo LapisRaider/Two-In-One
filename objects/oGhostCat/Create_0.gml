@@ -4,7 +4,7 @@ IDLE_ANIM_NAME = sGhostCat_Idle
 FALLING_ANIM_NAME = sGhostCat_Falling
 JUMPING_ANIM_NAME = sGhostCat_Jumping
 DEAD_ANIM_NAME = sGhostCat_Death
-ORIGINAL_SCALE_SIZE = 0.7
+ORIGINAL_SCALE_SIZE = abs(image_xscale)
 
 SPEED = 1
 XSPEED_IN_AIR = 0.8
