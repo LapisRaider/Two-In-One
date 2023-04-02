@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "FixedUI",
-    "path": "folders/Objects/UI/FixedUI.yy",
+    "name": "IconButtons",
+    "path": "folders/Objects/UI/IconButtons.yy",
   },
   "parentObjectId": null,
   "persistent": false,

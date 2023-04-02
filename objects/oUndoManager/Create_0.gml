@@ -55,7 +55,7 @@ function DataToTrack() constructor{
 	isLivingCat = true;
 }
 
-MAX_QUEUE_AMT = 5;
+MAX_QUEUE_AMT = 10;
 undoTracker = array_create(MAX_QUEUE_AMT, noone);
 head = 0
 tail = -1
