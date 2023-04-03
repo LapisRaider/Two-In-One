@@ -47,7 +47,6 @@ if (currentDeathResetTimer >= 0) {
 	if (currentDeathResetTimer == 0) {
 		if (oUndoManager.sizeCounter != 0) {
 			src_SlideTransition(TRANS_MODE.UNDO_DEATH);
-			UndoWhenDead();
 		} else {
 			ResetRoom();
 			src_SlideTransition(TRANS_MODE.RESTART);

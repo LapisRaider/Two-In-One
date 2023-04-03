@@ -37,6 +37,7 @@ if (mode != TRANS_MODE.OFF) {
 			case TRANS_MODE.UNDO_DEATH: {
 				mode = TRANS_MODE.INTRO;
 				oUndoManager.PopLast();
+				oGameManager.UndoWhenDead();
 				break;
 			}
 		}
