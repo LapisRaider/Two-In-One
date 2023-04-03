@@ -13,4 +13,7 @@ function InitSwapCat(){
 	oGhostCat.image_alpha = ghostCatAlpha;
 	if (instance_exists(oGhostFish))
 		oGhostFish.image_alpha = ghostCatAlpha;
+		
+	layer_set_visible("GhostBackground",  !global.isLivingCat);
+	layer_set_visible("LivingBackground",  global.isLivingCat);
 }
