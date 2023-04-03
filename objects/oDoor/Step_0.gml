@@ -10,8 +10,11 @@ if (place_meeting(x, y, oGhostCat) && place_meeting(x,y, oLivingCat)) {
 	if (instance_exists(oCurrProgressTracker) && nextRoomIndex != 0) {
 		if (nextRoomIndex > global.maxLevel)
 			global.maxLevel = nextRoomIndex;
-			
-		show_debug_message(global.maxLevel);
+	}
+	
+	if (!endSoundPlayed) {
+		oSoundManager.playFinishLevel = true;
+		endSoundPlayed = true;
 	}
 	
 	src_SlideTransition(TRANS_MODE.GOTO, nextRoom);

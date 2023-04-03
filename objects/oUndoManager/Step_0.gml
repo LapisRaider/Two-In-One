@@ -41,14 +41,14 @@ function StartTrack(moveDone) {
 	dataToTrack.ghostFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oGhostFish); ++i;) {
 		var fish = instance_find(oGhostFish, i);
-		var ghostFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showCollectText);
+		var ghostFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showText);
 		ds_list_add(dataToTrack.ghostFishes, ghostFish);
 	}
 	
 	dataToTrack.livingFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oLivingFish); ++i;) {
 		var fish = instance_find(oLivingFish, i);
-		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showCollectText);
+		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showText);
 		ds_list_add(dataToTrack.livingFishes, livingFish);
 	}
 	

@@ -27,6 +27,7 @@ function UpdateMovement(xDir, isJump) {
 		isOnGround = false;
 
 		xCurrSpeed = XSPEED_IN_AIR;
+		oSoundManager.playJump = true;
 	}
 	
 	//moving down slopes
