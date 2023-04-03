@@ -21,6 +21,27 @@ function UndoWhenDead() {
 	currentDeathResetTimer = -1;
 }
 
+function SetPause(pause) {
+	global.isPause = pause;
+	
+	var layerId = layer_get_id("PauseMenu");
+	layer_set_visible(layerId, pause);
+}
+
+function SetSound(sound) {
+	global.playSound = sound;
+}
+
+function ObjectiveMenuOpen(open) {
+	global.isObjectiveMenuOpen = open;
+	
+	var layerId = layer_get_id("ObjectiveMenu");
+	layer_set_visible(layerId, open);
+	
+	layerId = layer_get_id("PauseMenu");
+	layer_set_visible(layerId, !open);
+}
+
 if (currentDeathResetTimer >= 0) {
 	--currentDeathResetTimer;
 	if (currentDeathResetTimer == 0) {

@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSoundButton",
+  "name": "oCloseObjectives",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "IconButtons",
-    "path": "folders/Objects/UI/IconButtons.yy",
+    "name": "Objectives",
+    "path": "folders/Objects/UI/Objectives.yy",
   },
   "parentObjectId": {
     "name": "oIconButton",
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sAudio",
-    "path": "sprites/sAudio/sAudio.yy",
+    "name": "sCross",
+    "path": "sprites/sCross/sCross.yy",
   },
   "spriteMaskId": null,
   "visible": true,

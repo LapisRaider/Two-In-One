@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Icons",
+    "path": "folders/Sprites/UI/Icons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

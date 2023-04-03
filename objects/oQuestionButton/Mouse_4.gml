@@ -1,0 +1,1 @@
+oGameManager.ObjectiveMenuOpen(true);

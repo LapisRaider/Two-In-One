@@ -1,0 +1,1 @@
+oGameManager.SetPause(true);

@@ -1,21 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSoundButton",
+  "name": "oDoorUIStationary",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "IconButtons",
-    "path": "folders/Objects/UI/IconButtons.yy",
+    "name": "Objectives",
+    "path": "folders/Objects/UI/Objectives.yy",
   },
-  "parentObjectId": {
-    "name": "oIconButton",
-    "path": "objects/oIconButton/oIconButton.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sAudio",
-    "path": "sprites/sAudio/sAudio.yy",
+    "name": "Door",
+    "path": "sprites/Door/Door.yy",
   },
   "spriteMaskId": null,
   "visible": true,
