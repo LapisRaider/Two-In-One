@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sound_undo",
+  "name": "sound_unlockDoor",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.781746,
+  "duration": 0.660408,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sound_undo.wav",
+  "soundFile": "sound_unlockDoor.wav",
   "type": 0,
-  "volume": 0.5,
+  "volume": 1.0,
 }

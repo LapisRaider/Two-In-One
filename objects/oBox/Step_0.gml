@@ -28,8 +28,8 @@ function UpdateBoxMovement() {
 		}
 		
 		//if something on the left + other box moving right
-		if ((place_meeting(x - COLLISION_TOP_OFFSET, y, other) && sign(other.xVel) > 0) || 
-		(place_meeting(x + COLLISION_TOP_OFFSET, y, other) && sign(other.xVel) < 0)) {
+		if ((place_meeting(x - COLLISION_SIDE_OFFSET, y, other) && sign(other.xVel) > 0) || 
+		(place_meeting(x + COLLISION_SIDE_OFFSET, y, other) && sign(other.xVel) < 0)) {
 			 xFollowVel = other.xVel;
 			 break;
 		}

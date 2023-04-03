@@ -6,9 +6,19 @@ if (mode != TRANS_MODE.OFF) {
 		//reduce by 1/10 of the percent or 0.005
 		//start fast then slowly decrease
 		percent = max(0, percent - max(percent/transitionSpeed, 0.005));
+		
+		if (!playOpeningSound) {
+			oSoundManager.playOpeningScene = true;
+			playOpeningSound = true;
+		}
 	}
 	else {
 		percent = min(1 + timeBetweenTransition, percent + max((1-percent)/transitionSpeed, 0.005));
+		
+		if (!playClosingSound) {
+			oSoundManager.playClosingScene = true;
+			playClosingSound = true;
+		}
 	}
 	
 	if (percent == 1 + timeBetweenTransition || percent == 0) {
@@ -42,4 +52,7 @@ if (mode != TRANS_MODE.OFF) {
 			}
 		}
 	}
+} else {
+	playOpeningSound = false;
+	playClosingSound = false;
 }

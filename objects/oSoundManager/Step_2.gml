@@ -1,18 +1,3 @@
-function PlaySoundNoOverlap(soundName, priority, loop, isPlay, sndInstance = noone) {
-	if (!isPlay || !global.playSound)
-		return;
-		
-	var snd = sndInstance;
-	
-	// only if the sound effect is not playing, then play sound
-	if (!audio_is_playing(sndInstance)) {
-		snd = audio_play_sound(soundName, priority, loop);
-		//audio_sound_gain(snd, global.sfxVol * soundName.volume, 0)
-	}
-	
-	return snd;
-}
-
 function PlaySound(soundName, priority, loop, isPlay) {
 	if (!isPlay || !global.playSound) 
 		return;
@@ -32,7 +17,10 @@ PlaySound(sound_finishLevel, SOUND_SFX_PRORITY, false, playFinishLevel);
 PlaySound(sound_jump, SOUND_SFX_PRORITY, false, playJump);
 PlaySound(sound_pickup, SOUND_SFX_PRORITY, false, playPickup);
 PlaySound(sound_spike, SOUND_SFX_PRORITY, false, playSpikeHit);
+PlaySound(sound_unlockDoor, SOUND_SFX_PRORITY, false, playUnlockDoor);
 
+PlaySound(sound_sceneOpen, SCENE_SFX_PRIORITY, false, playOpeningScene);
+PlaySound(sound_sceneClose, SCENE_SFX_PRIORITY, false, playClosingScene);
 
 PlaySound(sound_undo, UNDO_SOUND_SFX_PRIORITY, false, playUndo);
 
@@ -44,5 +32,18 @@ playJump = false
 playPickup = false
 playSpikeHit = false
 playUndo = false
+playOpeningScene = false
+playClosingScene = false
+playUnlockDoor = false
+
 
 // play looping sfx
+if (!audio_is_playing(pushCrateInstance) && playPushCrate) {
+	pushCrateInstance = audio_play_sound(sound_pushCrate, SOUND_SFX_PRORITY, false);
+} else if (!playPushCrate) {
+	audio_stop_sound(pushCrateInstance);
+}
+
+//pushCrateInstance = PlaySoundNoOverlap(sound_pushCrate, SOUND_SFX_PRORITY, false, playPushCrate, pushCrateInstance);
+
+playPushCrate = false;

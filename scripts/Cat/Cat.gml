@@ -55,10 +55,13 @@ function UpdateMovement(xDir, isJump) {
 
 
 function PushBox() {
-	var instance = instance_place(x + xVel, y, O_BOX);
+	var instance = instance_place(x + xVel + sign(xVel) * 1, y, O_BOX);
 	if (instance != noone) {
 		instance.MoveInDirX(sign(xVel), PUSH_STRENGTH);
-	}
+		
+		if (sign(xVel) != 0)
+			oSoundManager.playPushCrate = true;
+	} 
 }
 
 function UpdateAnim(xDir) {

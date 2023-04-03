@@ -18,3 +18,5 @@ timeBetweenTransition = 0.2; //how much extra time the screen will pause at the 
 
 targetRoom = Room1; //which is next room
 
+playOpeningSound = false;
+playClosingSound = false;
