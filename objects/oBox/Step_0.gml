@@ -6,6 +6,7 @@ function UpdateBoxMovement() {
 	var solidCollision = place_meeting(x, y + slopeMax, O_COLLIDABLES_PARENT);
 	
 	yVel += GRAVITY;
+	notMoving = false;
 	
 	//moving down slopes
 	if (solidCollision && !place_meeting(x, y + slopeMax, O_COLLIDABLE_WALL) && yVel > 0) {
@@ -15,6 +16,7 @@ function UpdateBoxMovement() {
 	}
 	
 	var collideWithBoxBelow = false;
+	
 	with (oBox) {
 		if (other.id == id) {
 			continue;
@@ -22,7 +24,8 @@ function UpdateBoxMovement() {
 		
 		//if there is something below it and it's moving
 		if (place_meeting(x, y + COLLISION_TOP_OFFSET, other)) {
-			 xFollowVel = other.xVel;
+			 followBox = other;
+			 //xFollowVel = other.xVel;
 			 collideWithBoxBelow = true;
 			 break;
 		}
@@ -35,6 +38,13 @@ function UpdateBoxMovement() {
 		}
 	}
 	
+	if (followBox != noone) {
+		xFollowVel = followBox.xVel;
+		followBox.UpdateBoxMovement();
+		if (followBox.notMoving)
+			xFollowVel = 0;
+	}
+
 	xVel += xFollowVel;
 	xFollowVel = 0;
 	
@@ -45,8 +55,10 @@ function UpdateBoxMovement() {
 	BasicCollision(oEnemy);
 	
 	//move and collide
-	move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
+	var xCollidedObjs = move_and_collide(xVel, 0, O_COLLIDABLES_PARENT);
 	var collidedObjs = move_and_collide(0, yVel, O_COLLIDABLES_PARENT);
+	
+	notMoving = array_length(xCollidedObjs) != 0 || sign(xVel) == 0;
 	
 	//if we collide with something && it's below us
 	if (array_length(collidedObjs) != 0 && (place_meeting(x, y + yVel, O_COLLIDABLES_PARENT) || collideWithBoxBelow)) {
@@ -64,7 +76,9 @@ function UpdateBoxMovement() {
 	if (collisionLivingCat == noone && collisionGhostCat == noone) {
 		xVel = 0;
 	}
+	
+	updatedThisFrame = true;
 }
 
-
-UpdateBoxMovement();
+if (!updatedThisFrame)
+	UpdateBoxMovement();

@@ -12,3 +12,7 @@ xVel = 0;
 xFollowVel = 0; //if it's on something
 yVel = 0;
 slopeMax = 4;
+
+followBox = noone;
+updatedThisFrame = false;
+notMoving = false;
