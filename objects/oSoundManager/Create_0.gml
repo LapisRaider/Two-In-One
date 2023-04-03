@@ -4,6 +4,7 @@
 #macro UNDO_SOUND_SFX_PRIORITY 10
 
 global.sfxVol = 1
+global.playSound = true;
 
 //sfx to play
 playEnemyHitSound = false

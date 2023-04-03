@@ -20,6 +20,8 @@ if (keyboard_check_pressed(vk_space)) {
 	}
 	else
 		currCharIndex = string_length(dialogue[currStringTextIndex]) - 1;
+		
+	oSoundManager.playUIbuttonPressed = true;
 }
 
 
@@ -34,6 +36,7 @@ if (currStringTextIndex >= array_length_1d(dialogue)) {
 if (!isEndOfDialogue) {
 	text = string_copy(dialogue[currStringTextIndex], 0, currCharIndex);
 	currCharIndex += 1;
+	oSoundManager.playTypingText = true;
 }
 
 
