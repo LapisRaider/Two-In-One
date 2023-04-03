@@ -1,4 +1,8 @@
-oGameManager.SetSound(!global.playSound);
+if (!instance_exists(oSoundManager)) {
+	return;
+}
+
+oSoundManager.SetSound(!global.playSound);
 
 if (global.playSound) {
 	sprite_index = sAudio;
