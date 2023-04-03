@@ -1,1 +1,2 @@
 endSoundPlayed = false;
+unlockDoorPlayed = false;

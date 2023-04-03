@@ -5,6 +5,12 @@ if (global.currFishesCollected < global.totalFishesInLevel) {
 
 image_index = 1; //change sprite to open door version
 
+if (!unlockDoorPlayed) {
+	oSoundManager.playUnlockDoor = true;
+	unlockDoorPlayed = true;
+}
+
+
 if (place_meeting(x, y, oGhostCat) && place_meeting(x,y, oLivingCat)) {
 	//set max room finished
 	if (instance_exists(oCurrProgressTracker) && nextRoomIndex != 0) {
