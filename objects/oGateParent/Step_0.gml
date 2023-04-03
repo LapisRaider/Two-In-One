@@ -36,3 +36,7 @@ if (yFinalPos < ystart)
 else 
 	y = clamp(y, ystart, yFinalPos);
 
+if (sign(xVel) != 0 || sign(yVel) != 0) {
+	oSoundManager.playSlidingPlatformMoving = true;
+}
+

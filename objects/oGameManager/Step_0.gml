@@ -79,6 +79,7 @@ if (oLivingCat.isDead || oGhostCat.isDead) {
 
 if (keyboard_check_pressed(ord("X"))) {
 	global.isLivingCat = !global.isLivingCat;
+	oSoundManager.playSwapCat = true;
 	
 	InitSwapCat();
 }

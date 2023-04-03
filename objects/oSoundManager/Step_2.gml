@@ -25,6 +25,9 @@ PlaySound(sound_buttonLeave, SOUND_SFX_PRORITY, false, playPressedSound);
 PlaySound(sound_sceneOpen, SCENE_SFX_PRIORITY, false, playOpeningScene);
 PlaySound(sound_sceneClose, SCENE_SFX_PRIORITY, false, playClosingScene);
 
+PlaySound(sound_swapCat, SCENE_SFX_PRIORITY, false, playSwapCat);
+PlaySound(sound_boxDrop, SCENE_SFX_PRIORITY, false, playBoxDropOnFloor);
+
 
 //UI sounds
 PlaySound(sound_undo, UNDO_SOUND_SFX_PRIORITY, false, playUndo);
@@ -44,6 +47,8 @@ playClosingScene = false
 playUnlockDoor = false
 
 playUIbuttonPressed = false
+playBoxDropOnFloor = false
+playSwapCat = false
 
 playLeaveSound = false;
 playPressedSound = false;
@@ -56,6 +61,18 @@ if (!audio_is_playing(pushCrateInstance) && playPushCrate) {
 	audio_stop_sound(pushCrateInstance);
 }
 
-//pushCrateInstance = PlaySoundNoOverlap(sound_pushCrate, SOUND_SFX_PRORITY, false, playPushCrate, pushCrateInstance);
+if (!audio_is_playing(slidingPlatformInstance) && playSlidingPlatformMoving) {
+	slidingPlatformInstance = audio_play_sound(sound_slidingPlatform, SOUND_SFX_PRORITY, false);
+} else if (!playSlidingPlatformMoving) {
+	audio_stop_sound(slidingPlatformInstance);
+}
+
+if (!audio_is_playing(typingTextInstance) && playTypingText) {
+	typingTextInstance = audio_play_sound(sound_typing, SOUND_SFX_PRORITY, false);
+} else if (!playTypingText) {
+	audio_stop_sound(typingTextInstance);
+}
 
 playPushCrate = false;
+playTypingText = false
+playSlidingPlatformMoving = false

@@ -38,15 +38,19 @@ function UpdateBoxMovement() {
 		}
 	}
 	
-	if (followBox != noone) {
+	if (followBox != noone ) {
 		xFollowVel = followBox.xVel;
 		followBox.UpdateBoxMovement();
 		if (followBox.notMoving)
 			xFollowVel = 0;
+			
+		followBox = noone;
 	}
 
 	xVel += xFollowVel;
 	xFollowVel = 0;
+	
+	var prevYVel = yVel;
 	
 	BasicCollision(oGhostCat);
 	BasicCollision(oLivingCat);
@@ -75,6 +79,10 @@ function UpdateBoxMovement() {
 	var collisionGhostCat = collision_rectangle(x - INTERACTION_SIZE, y - INTERACTION_SIZE, x + INTERACTION_SIZE, y + INTERACTION_SIZE, oGhostCat, false, true);
 	if (collisionLivingCat == noone && collisionGhostCat == noone) {
 		xVel = 0;
+	}
+	
+	if (prevYVel != yVel && abs(prevYVel) >= FALL_SOUND_THRESHOLD && yVel == 0) {
+		oSoundManager.playBoxDropOnFloor = true;
 	}
 	
 	updatedThisFrame = true;

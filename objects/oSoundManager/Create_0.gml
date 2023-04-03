@@ -18,12 +18,22 @@ playOpeningScene = false
 playClosingScene = false
 
 playUnlockDoor = false
+playBoxDropOnFloor = false
 
 playLeaveSound = false;
 playPressedSound = false;
+playSwapCat = false
 
 playUIbuttonPressed = false
+
+
 
 // looping sfx
 playPushCrate = false
 pushCrateInstance = noone;
+
+playSlidingPlatformMoving = false
+slidingPlatformInstance = noone;
+
+playTypingText = false
+typingTextInstance = noone
