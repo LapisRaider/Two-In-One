@@ -120,6 +120,7 @@
     {"id":{"name":"scr_Collision","path":"scripts/scr_Collision/scr_Collision.yy",},"order":1,},
     {"id":{"name":"oQuitDoor","path":"objects/oQuitDoor/oQuitDoor.yy",},"order":15,},
     {"id":{"name":"oCloseObjectives","path":"objects/oCloseObjectives/oCloseObjectives.yy",},"order":8,},
+    {"id":{"name":"sound_undo","path":"sounds/sound_undo/sound_undo.yy",},"order":8,},
     {"id":{"name":"sCross","path":"sprites/sCross/sCross.yy",},"order":0,},
     {"id":{"name":"oIconButton","path":"objects/oIconButton/oIconButton.yy",},"order":0,},
     {"id":{"name":"sound_pickup","path":"sounds/sound_pickup/sound_pickup.yy",},"order":4,},

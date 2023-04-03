@@ -161,10 +161,11 @@ function PopLast() {
 	}
 	
 	UpdateUI();
+	oSoundManager.playUndo = true;
 }
 
 
 // check if players press undo
-if (keyboard_check_pressed(ord("U"))) {
+if (keyboard_check_pressed(ord("Z"))) {
 	PopLast();
 }

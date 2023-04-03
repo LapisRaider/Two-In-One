@@ -33,6 +33,9 @@ PlaySound(sound_jump, SOUND_SFX_PRORITY, false, playJump);
 PlaySound(sound_pickup, SOUND_SFX_PRORITY, false, playPickup);
 PlaySound(sound_spike, SOUND_SFX_PRORITY, false, playSpikeHit);
 
+
+PlaySound(sound_undo, UNDO_SOUND_SFX_PRIORITY, false, playUndo);
+
 //reset non-looping sfx variables
 playEnemyHitSound = false
 playFallPitfall = false
@@ -40,5 +43,6 @@ playFinishLevel = false
 playJump = false
 playPickup = false
 playSpikeHit = false
+playUndo = false
 
 // play looping sfx

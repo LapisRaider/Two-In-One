@@ -90,6 +90,7 @@
     {"name":"scr_Collision","order":1,"path":"scripts/scr_Collision/scr_Collision.yy",},
     {"name":"oQuitDoor","order":15,"path":"objects/oQuitDoor/oQuitDoor.yy",},
     {"name":"oCloseObjectives","order":8,"path":"objects/oCloseObjectives/oCloseObjectives.yy",},
+    {"name":"sound_undo","order":8,"path":"sounds/sound_undo/sound_undo.yy",},
     {"name":"sound_pickup","order":4,"path":"sounds/sound_pickup/sound_pickup.yy",},
     {"name":"Door","order":2,"path":"sprites/Door/Door.yy",},
     {"name":"oGate2Blks","order":1,"path":"objects/oGate2Blks/oGate2Blks.yy",},

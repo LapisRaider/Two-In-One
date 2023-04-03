@@ -2,6 +2,7 @@ function ResetRoom() {
 	global.isLivingCat = true;
 	global.currFishesCollected = 0;
 	global.isPause = false;
+	global.isObjectiveMenuOpen = false;
 	
 	currentDeathResetTimer = -1;
 }
