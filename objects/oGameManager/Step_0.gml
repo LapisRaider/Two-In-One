@@ -63,6 +63,11 @@ if (keyboard_check_pressed(ord("R"))) {
 	src_SlideTransition(TRANS_MODE.RESTART);
 }
 
+if (keyboard_check_pressed(vk_escape)) {
+	ObjectiveMenuOpen(false);
+	SetPause(!global.isPause);
+}
+
 if (oLivingCat.isDead || oGhostCat.isDead) {
 	return;
 }
