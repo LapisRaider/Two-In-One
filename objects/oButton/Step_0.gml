@@ -8,3 +8,14 @@ image_index = isPressed;
 if (inst_gate != undefined)
 	inst_gate.isOpen = isPressed;
 	
+if (isPressed && !playPressedSound) {
+	playPressedSound = true;
+	oSoundManager.playPressedSound = true;
+	playLeaveSound = false;
+}
+
+if (!isPressed && !playLeaveSound) {
+	playLeaveSound = true;
+	playPressedSound = false;
+	oSoundManager.playLeaveSound = true;
+}

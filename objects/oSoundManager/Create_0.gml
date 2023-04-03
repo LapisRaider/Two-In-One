@@ -19,6 +19,10 @@ playClosingScene = false
 
 playUnlockDoor = false
 
+playLeaveSound = false;
+playPressedSound = false;
+
+
 
 // looping sfx
 playPushCrate = false

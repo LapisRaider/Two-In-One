@@ -19,6 +19,9 @@ PlaySound(sound_pickup, SOUND_SFX_PRORITY, false, playPickup);
 PlaySound(sound_spike, SOUND_SFX_PRORITY, false, playSpikeHit);
 PlaySound(sound_unlockDoor, SOUND_SFX_PRORITY, false, playUnlockDoor);
 
+PlaySound(sound_buttonEnter, SOUND_SFX_PRORITY, false, playLeaveSound);
+PlaySound(sound_buttonLeave, SOUND_SFX_PRORITY, false, playPressedSound);
+
 PlaySound(sound_sceneOpen, SCENE_SFX_PRIORITY, false, playOpeningScene);
 PlaySound(sound_sceneClose, SCENE_SFX_PRIORITY, false, playClosingScene);
 
@@ -35,6 +38,9 @@ playUndo = false
 playOpeningScene = false
 playClosingScene = false
 playUnlockDoor = false
+
+playLeaveSound = false;
+playPressedSound = false;
 
 
 // play looping sfx
