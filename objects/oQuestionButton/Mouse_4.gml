@@ -1,1 +1,2 @@
-oGameManager.ObjectiveMenuOpen(true);
+if (global.isPause && !global.isObjectiveMenuOpen)
+	oGameManager.ObjectiveMenuOpen(true);

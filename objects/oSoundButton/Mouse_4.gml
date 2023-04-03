@@ -1,3 +1,5 @@
+if (!global.isPause || global.isObjectiveMenuOpen)
+	return;
 
 oGameManager.SetSound(!global.playSound);
 
