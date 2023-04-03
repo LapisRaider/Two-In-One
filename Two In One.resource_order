@@ -10,6 +10,7 @@
     {"name":"InteractableObjects","order":9,"path":"folders/Objects/InteractableObjects.yy",},
     {"name":"Gates","order":8,"path":"folders/Objects/InteractableObjects/Gates.yy",},
     {"name":"LivingCat","order":7,"path":"folders/Objects/LivingCat.yy",},
+    {"name":"Managers","order":19,"path":"folders/Objects/Managers.yy",},
     {"name":"UI","order":14,"path":"folders/Objects/UI.yy",},
     {"name":"FixedUI","order":12,"path":"folders/Objects/UI/FixedUI.yy",},
     {"name":"IconButtons","order":14,"path":"folders/Objects/UI/IconButtons.yy",},
@@ -31,7 +32,6 @@
     {"name":"Icons","order":10,"path":"folders/Sprites/UI/Icons.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Managers","order":19,"path":"folders/Objects/Managers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oLivingWall","order":4,"path":"objects/oLivingWall/oLivingWall.yy",},
