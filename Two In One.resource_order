@@ -121,6 +121,7 @@
     {"name":"oCutScene","order":14,"path":"objects/oCutScene/oCutScene.yy",},
     {"name":"oXButton","order":9,"path":"objects/oXButton/oXButton.yy",},
     {"name":"Sprite31","order":16,"path":"sprites/Sprite31/Sprite31.yy",},
+    {"name":"sound_UIbuttonPressed","order":15,"path":"sounds/sound_UIbuttonPressed/sound_UIbuttonPressed.yy",},
     {"name":"sLogo","order":8,"path":"sprites/sLogo/sLogo.yy",},
     {"name":"sound_hitEnemy","order":7,"path":"sounds/sound_hitEnemy/sound_hitEnemy.yy",},
     {"name":"oSpikes","order":4,"path":"objects/oSpikes/oSpikes.yy",},

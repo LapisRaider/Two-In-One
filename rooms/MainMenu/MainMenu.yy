@@ -47,6 +47,7 @@
     {"name":"inst_1732640C","path":"rooms/MainMenu/MainMenu.yy",},
     {"name":"inst_631E56F5","path":"rooms/MainMenu/MainMenu.yy",},
     {"name":"inst_7897DD36","path":"rooms/MainMenu/MainMenu.yy",},
+    {"name":"inst_63E263DA","path":"rooms/MainMenu/MainMenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -140,6 +141,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oText","path":"objects/oText/oText.yy",},"propertyId":{"name":"alignment","path":"objects/oText/oText.yy",},"value":"fa_left",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oText","path":"objects/oText/oText.yy",},"propertyId":{"name":"vertAlignment","path":"objects/oText/oText.yy",},"value":"fa_center",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":326.0,"y":76.5,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63E263DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSoundManager","path":"objects/oSoundManager/oSoundManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":16.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Colliders","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_649B110E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGhostWall","path":"objects/oGhostWall/oGhostWall.yy",},"properties":[],"rotation":0.0,"scaleX":53.0,"scaleY":5.0,"x":8.0,"y":224.0,},

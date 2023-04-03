@@ -25,7 +25,11 @@ PlaySound(sound_buttonLeave, SOUND_SFX_PRORITY, false, playPressedSound);
 PlaySound(sound_sceneOpen, SCENE_SFX_PRIORITY, false, playOpeningScene);
 PlaySound(sound_sceneClose, SCENE_SFX_PRIORITY, false, playClosingScene);
 
+
+//UI sounds
 PlaySound(sound_undo, UNDO_SOUND_SFX_PRIORITY, false, playUndo);
+PlaySound(sound_UIbuttonPressed, UNDO_SOUND_SFX_PRIORITY, false, playUIbuttonPressed);
+
 
 //reset non-looping sfx variables
 playEnemyHitSound = false
@@ -38,6 +42,8 @@ playUndo = false
 playOpeningScene = false
 playClosingScene = false
 playUnlockDoor = false
+
+playUIbuttonPressed = false
 
 playLeaveSound = false;
 playPressedSound = false;

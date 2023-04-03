@@ -22,7 +22,7 @@ playUnlockDoor = false
 playLeaveSound = false;
 playPressedSound = false;
 
-
+playUIbuttonPressed = false
 
 // looping sfx
 playPushCrate = false

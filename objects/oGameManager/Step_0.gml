@@ -1,8 +1,9 @@
 function ResetRoom() {
 	global.isLivingCat = true;
 	global.currFishesCollected = 0;
-	global.isPause = false;
-	global.isObjectiveMenuOpen = false;
+
+	SetPause(false);
+	ObjectiveMenuOpen(false);
 	
 	currentDeathResetTimer = -1;
 }
@@ -27,6 +28,8 @@ function SetPause(pause) {
 	
 	var layerId = layer_get_id("PauseMenu");
 	layer_set_visible(layerId, pause);
+	
+	oSoundManager.playUIbuttonPressed = true;
 }
 
 function SetSound(sound) {
@@ -41,6 +44,8 @@ function ObjectiveMenuOpen(open) {
 	
 	layerId = layer_get_id("PauseMenu");
 	layer_set_visible(layerId, !open);
+	
+	oSoundManager.playUIbuttonPressed = true;
 }
 
 if (currentDeathResetTimer >= 0) {

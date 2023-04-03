@@ -18,6 +18,7 @@
     {"name":"inst_7BEF2225","path":"rooms/Credits/Credits.yy",},
     {"name":"inst_6DE920C4","path":"rooms/Credits/Credits.yy",},
     {"name":"inst_155C9C5F","path":"rooms/Credits/Credits.yy",},
+    {"name":"inst_4B4456E8","path":"rooms/Credits/Credits.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -82,6 +83,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oText","path":"objects/oText/oText.yy",},"propertyId":{"name":"textColor","path":"objects/oText/oText.yy",},"value":"$FF000000",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":172.0,"y":163.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_155C9C5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5.0,"y":3.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B4456E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSoundManager","path":"objects/oSoundManager/oSoundManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8.0,"y":24.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
