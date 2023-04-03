@@ -67,6 +67,7 @@
     {"id":{"name":"oCatDeath","path":"objects/oCatDeath/oCatDeath.yy",},"order":12,},
     {"id":{"name":"oSoundManager","path":"objects/oSoundManager/oSoundManager.yy",},"order":4,},
     {"id":{"name":"oSoundButton","path":"objects/oSoundButton/oSoundButton.yy",},"order":3,},
+    {"id":{"name":"sCutScene4","path":"sprites/sCutScene4/sCutScene4.yy",},"order":3,},
     {"id":{"name":"sBackgroundGhost","path":"sprites/sBackgroundGhost/sBackgroundGhost.yy",},"order":5,},
     {"id":{"name":"oGateParent","path":"objects/oGateParent/oGateParent.yy",},"order":0,},
     {"id":{"name":"sXButton","path":"sprites/sXButton/sXButton.yy",},"order":4,},
@@ -178,6 +179,7 @@
     {"id":{"name":"oUndoState","path":"objects/oUndoState/oUndoState.yy",},"order":11,},
     {"id":{"name":"oBox","path":"objects/oBox/oBox.yy",},"order":3,},
     {"id":{"name":"oFishUI","path":"objects/oFishUI/oFishUI.yy",},"order":0,},
+    {"id":{"name":"LastCutscene","path":"rooms/LastCutscene/LastCutscene.yy",},"order":12,},
     {"id":{"name":"sInfo","path":"sprites/sInfo/sInfo.yy",},"order":3,},
     {"id":{"name":"sound_buttonEnter","path":"sounds/sound_buttonEnter/sound_buttonEnter.yy",},"order":13,},
     {"id":{"name":"sCutScene1","path":"sprites/sCutScene1/sCutScene1.yy",},"order":1,},
@@ -211,6 +213,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"LastCutscene","path":"rooms/LastCutscene/LastCutscene.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},

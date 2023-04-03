@@ -27,7 +27,7 @@ if (keyboard_check_pressed(vk_space)) {
 
 
 // go to next room
-if (currStringTextIndex >= array_length_1d(dialogue)) {
+if (currStringTextIndex >= array_length_1d(dialogue) || (!isFinalScene && currStringTextIndex >= LAST_PIC_INDEX)) {
 	src_SlideTransition(TRANS_MODE.GOTO, nextRoom);
 	return;
 }
