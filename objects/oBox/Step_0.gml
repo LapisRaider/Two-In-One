@@ -39,7 +39,7 @@ function UpdateBoxMovement() {
 	}
 	
 	if (followBox != noone ) {
-		xFollowVel = followBox.xVel;
+		xFollowVel = followBox.xVel * 2;
 		followBox.UpdateBoxMovement();
 		if (followBox.notMoving)
 			xFollowVel = 0;
