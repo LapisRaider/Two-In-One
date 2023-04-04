@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sRButton",
-    "path": "sprites/sRButton/sRButton.yy",
+    "name": "sUndoKey",
+    "path": "sprites/sUndoKey/sUndoKey.yy",
   },
   "spriteMaskId": null,
   "visible": true,

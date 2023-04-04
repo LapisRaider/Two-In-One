@@ -112,6 +112,7 @@
     {"name":"oCutSceneHandler","order":5,"path":"objects/oCutSceneHandler/oCutSceneHandler.yy",},
     {"name":"oRightButton","order":2,"path":"objects/oRightButton/oRightButton.yy",},
     {"name":"fBody","order":1,"path":"fonts/fBody/fBody.yy",},
+    {"name":"sUndoKey","order":11,"path":"sprites/sUndoKey/sUndoKey.yy",},
     {"name":"shader_ChangeAlphaLiving","order":1,"path":"shaders/shader_ChangeAlphaLiving/shader_ChangeAlphaLiving.yy",},
     {"name":"sLivingFish","order":1,"path":"sprites/sLivingFish/sLivingFish.yy",},
     {"name":"LevelSelection","order":9,"path":"rooms/LevelSelection/LevelSelection.yy",},
