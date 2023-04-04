@@ -6,13 +6,13 @@ function InitSwapCat(){
 	ghostTile_alpha = ghostCatAlpha;
 	livingTile_alpha = livingCatAlpha;
 	
-	/*
+	
 	oLivingCat.image_alpha = livingCatAlpha;
-	if (instance_exists(oLivingFish))
-		oLivingFish.image_alpha = livingCatAlpha;
+	/*if (instance_exists(oLivingFish))
+		oLivingFish.image_alpha = livingCatAlpha;*/
 	
 	oGhostCat.image_alpha = ghostCatAlpha;
-	if (instance_exists(oGhostFish))
+	/*if (instance_exists(oGhostFish))
 		oGhostFish.image_alpha = ghostCatAlpha; */
 		
 	layer_set_visible("GhostBackground",  !global.isLivingCat);
