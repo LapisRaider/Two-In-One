@@ -49,6 +49,7 @@
     {"name":"inst_7897DD36","path":"rooms/MainMenu/MainMenu.yy",},
     {"name":"inst_63E263DA","path":"rooms/MainMenu/MainMenu.yy",},
     {"name":"inst_25BE7E67","path":"rooms/MainMenu/MainMenu.yy",},
+    {"name":"inst_1029F49E","path":"rooms/MainMenu/MainMenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -147,6 +148,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25BE7E67","colour":4285743110,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSoundButton","path":"objects/oSoundButton/oSoundButton.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSoundButton","path":"objects/oSoundButton/oSoundButton.yy",},"propertyId":{"name":"isPauseMenu","path":"objects/oSoundButton/oSoundButton.yy",},"value":"False",},
           ],"rotation":0.0,"scaleX":0.125,"scaleY":0.125,"x":424.0,"y":8.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1029F49E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBGMManager","path":"objects/oBGMManager/oBGMManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":56.0,"y":24.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Colliders","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_649B110E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGhostWall","path":"objects/oGhostWall/oGhostWall.yy",},"properties":[],"rotation":0.0,"scaleX":53.0,"scaleY":5.0,"x":8.0,"y":224.0,},

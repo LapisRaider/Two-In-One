@@ -2,8 +2,13 @@ function ResetRoom() {
 	global.isLivingCat = true;
 	global.currFishesCollected = 0;
 
-	SetPause(false);
-	ObjectiveMenuOpen(false);
+	global.isPause = false;
+	var layerId = layer_get_id("ObjectiveMenu");
+	layer_set_visible(layerId, false);
+	
+	global.isObjectiveMenuOpen = false;
+	layerId = layer_get_id("PauseMenu");
+	layer_set_visible(layerId, false);
 	
 	currentDeathResetTimer = -1;
 }

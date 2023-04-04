@@ -32,7 +32,6 @@ playSwapCat = false
 
 playUIbuttonPressed = false
 
-
 // looping sfx
 playPushCrate = false
 pushCrateInstance = noone;

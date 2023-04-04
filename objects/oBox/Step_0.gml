@@ -25,7 +25,7 @@ function UpdateBoxMovement() {
 		//if there is something below it and it's moving
 		if (place_meeting(x, y + COLLISION_TOP_OFFSET, other)) {
 			 followBox = other;
-			 //xFollowVel = other.xVel;
+			 xFollowVel = other.xVel;
 			 collideWithBoxBelow = true;
 			 break;
 		}
@@ -38,12 +38,19 @@ function UpdateBoxMovement() {
 		}
 	}
 	
+	//if followBox have already been upadated, get prev Vel and just follow that and check if not moving
+	
 	if (followBox != noone ) {
-		xFollowVel = followBox.xVel * 2;
-		followBox.UpdateBoxMovement();
+		if (!followBox.updatedThisFrame) {
+			xFollowVel = followBox.xVel;
+			show_debug_message("NOT UPDATED SCENERIO {0} {1}", xFollowVel, followBox.xVel)
+			//followBox.UpdateBoxMovement();
+			
+		}
+		
 		if (followBox.notMoving)
 			xFollowVel = 0;
-			
+		
 		followBox = noone;
 	}
 
@@ -87,6 +94,7 @@ function UpdateBoxMovement() {
 	
 	updatedThisFrame = true;
 }
+
 
 if (!updatedThisFrame)
 	UpdateBoxMovement();
