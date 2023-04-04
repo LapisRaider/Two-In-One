@@ -14,7 +14,7 @@ if (isFinalScene) {
 	oCutScene.sprite_index = sCutScene4;
 }
 
-dialogue[STARTING_DIALOGUE] = "Ginger and Snow had always been inseperable,\n never leaving each other's side."
+dialogue[STARTING_DIALOGUE] = "Ginger and Ash had always been inseperable,\n never leaving each other's side."
 
 
 dialogue[SECOND_PIC_INDEX] = "However, one day,\n it seemed as though the Earth had sundered apart..."
@@ -26,10 +26,10 @@ dialogue[SECOND_PIC_INDEX + 5] = "They found themselves unable to reunite with o
 
 dialogue[THIRD_PIC_INDEX] = "However, they soon discovered that they had the ability\n to manipulate certain objects that have an impact on both worlds."
 dialogue[THIRD_PIC_INDEX + 1] = "Realizing the potential to work together and resolve the situation,\n they set out to find a solution."
-dialogue[THIRD_PIC_INDEX + 2] = "By obtaining magical energies in the form of fishes,\n they were open to open a gate and gradually merge their worlds back together."
+dialogue[THIRD_PIC_INDEX + 2] = "By obtaining magical energies in the form of fishes,\n they were able to unlock doors and gradually merge their worlds back together."
 dialogue[THIRD_PIC_INDEX + 3] = "But beware, as they found numerous obstacles\n along the way that threatened to thward their efforts..."
 
-dialogue[LAST_PIC_INDEX] = "And with that, after overcoming the final room,\n Earth is once again whole."
-dialogue[LAST_PIC_INDEX + 1] = "Ginger and Snow, back together, reunited happily."
+dialogue[LAST_PIC_INDEX] = "And with that, after overcoming the final room and collecting the very last fish,\n Earth is once again whole."
+dialogue[LAST_PIC_INDEX + 1] = "And most important of all, \n Ginger and Ash are finally reunited and by each other's side again."
 dialogue[LAST_PIC_INDEX + 2] = "THE END"
 dialogue[LAST_PIC_INDEX + 3] = "THANK YOU FOR PLAYING!"
