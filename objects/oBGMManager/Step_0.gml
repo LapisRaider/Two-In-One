@@ -41,5 +41,6 @@ if (room_get_name(room) != prevRoom) {
 	prevRoom = newRoom;
 }
 
-PlayBGM();
+if (playSound)
+	PlayBGM();
 

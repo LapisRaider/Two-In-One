@@ -42,6 +42,10 @@ function SetSound(sound) {
 	
 	if (instance_exists(oCurrProgressTracker))
 		global.soundActived = sound;
+		
+	if (!sound) {
+		audio_stop_all();
+	}
 }
 
 function ObjectiveMenuOpen(open) {
