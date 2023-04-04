@@ -630,6 +630,7 @@
     {"name":"inst_60A553CE","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4206D4D3","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_78EFF5E2","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_1EC314B2","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -878,6 +879,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSwitchCatHoverUI","path":"objects/oSwitchCatHoverUI/oSwitchCatHoverUI.yy",},"propertyId":{"name":"xOffset","path":"objects/oSwitchCatHoverUI/oSwitchCatHoverUI.yy",},"value":"-4",},
           ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":323.0,"y":166.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B593A9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSwitchCatHoverUI","path":"objects/oSwitchCatHoverUI/oSwitchCatHoverUI.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":16.0,"y":166.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EC314B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLevelTracker","path":"objects/oLevelTracker/oLevelTracker.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":8.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Normal_Walls","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76C022CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oNormalWall","path":"objects/oNormalWall/oNormalWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8.0,"y":184.0,},

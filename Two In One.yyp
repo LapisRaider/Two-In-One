@@ -215,9 +215,9 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"TEST","path":"rooms/TEST/TEST.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
-    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"LastCutscene","path":"rooms/LastCutscene/LastCutscene.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},

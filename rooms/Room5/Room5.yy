@@ -633,6 +633,7 @@
     {"name":"inst_118B302","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_240FB396","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_5617417E","path":"rooms/Room5/Room5.yy",},
+    {"name":"inst_5BC62991","path":"rooms/Room5/Room5.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -856,6 +857,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E1341D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFallDeathCollisionBox","path":"objects/oFallDeathCollisionBox/oFallDeathCollisionBox.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":2.0,"x":136.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5E11390A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFallDeathCollisionBox","path":"objects/oFallDeathCollisionBox/oFallDeathCollisionBox.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":2.0,"x":88.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6123761F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSoundManager","path":"objects/oSoundManager/oSoundManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":8.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5BC62991","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLevelTracker","path":"objects/oLevelTracker/oLevelTracker.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":8.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Normal_Walls","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29C4C1A1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oNormalWall","path":"objects/oNormalWall/oNormalWall.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":64.0,"y":184.0,},
