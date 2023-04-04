@@ -105,6 +105,10 @@ function StartCatDeath() {
 
 	isDead = true;
 	instance_create_layer(x, y, "Instances", oCatDeath);
+	
+	if (instance_exists(oLevelTracker)) {
+		oLevelTracker.currDeathCounter += 1;
+	}
 }
 
 function UpdateTracker(xDir, isJump) {
