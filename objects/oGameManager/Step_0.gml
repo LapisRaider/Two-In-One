@@ -34,6 +34,9 @@ function SetPause(pause) {
 
 function SetSound(sound) {
 	global.playSound = sound;
+	
+	if (instance_exists(oCurrProgressTracker))
+		global.soundActived = sound;
 }
 
 function ObjectiveMenuOpen(open) {

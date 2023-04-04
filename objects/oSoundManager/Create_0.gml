@@ -4,6 +4,12 @@
 #macro UNDO_SOUND_SFX_PRIORITY 10
 
 global.sfxVol = 1
+playSound = true;
+if (instance_exists(oGameManager)) {
+	playSound = global.playSound;
+} else if (instance_exists(oCurrProgressTracker)) {
+	playSound = global.soundActived;
+}
 
 //sfx to play
 playEnemyHitSound = false

@@ -9,7 +9,11 @@ global.totalFishesInLevel = 0;
 
 global.isPause = false; // do not let player have any input
 global.playSound = true;
+if (instance_exists(oCurrProgressTracker)) {
+	global.playSound = global.soundActived;
+}
 
+global.isObjectiveMenuOpen = false;
 
 //tile related graphics
 ghostTile_alpha = global.isLivingCat ? MIN_LAYER_ALPHA : 1;

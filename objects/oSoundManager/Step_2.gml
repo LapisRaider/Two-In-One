@@ -1,14 +1,19 @@
 function PlaySound(soundName, priority, loop, isPlay) {
-	if (!isPlay || !global.playSound) 
+	if (!isPlay) 
 		return;
 	
 	var snd = audio_play_sound(soundName, priority, loop)
 	//audio_sound_gain(snd, global.sfxVol * soundName.volume, 0)
 }
 
-if (!global.playSound)
-	return;
+if (instance_exists(oGameManager)) {
+	playSound = global.playSound;
+} else if (instance_exists(oCurrProgressTracker)) {
+	playSound = global.soundActived;
+}
 
+if (!playSound)
+	return;
 
 // play non-looping sfx
 PlaySound(sound_hitEnemy, SOUND_SFX_PRORITY, false, playEnemyHitSound);
