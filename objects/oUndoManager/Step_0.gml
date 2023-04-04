@@ -129,6 +129,15 @@ function PopLast() {
 		}
 	}
 	
+
+	for (var i = 0; i < ds_list_size(dataToTrack.boxes); ++i;) {
+		var boxData = ds_list_find_value(dataToTrack.boxes, i);
+		var box = instance_find(oBox, boxData.objId);
+		box.x = boxData.xPos;
+		box.y = boxData.yPos;
+	}
+	
+	
 	for (var i = 0; i < ds_list_size(dataToTrack.enemies); ++i;) {
 		var enemyData = ds_list_find_value(dataToTrack.enemies, i);
 		var enemy = instance_find(oEnemy, enemyData.objId);
