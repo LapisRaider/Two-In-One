@@ -3,6 +3,10 @@ function ReviveCat() {
 	isDead = false;
 }
 
+if (global.isPause) {
+	return;
+}
+
 moveDir = 0;
 var isPressJump = false;
 

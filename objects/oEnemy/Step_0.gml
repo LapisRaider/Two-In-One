@@ -1,3 +1,7 @@
+if (global.isPause) {
+	return;
+}
+
 //follow whichever cat is currently active
 var activeCat;
 if (global.isLivingCat) {

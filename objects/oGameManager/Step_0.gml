@@ -60,6 +60,17 @@ function ObjectiveMenuOpen(open) {
 	oSoundManager.playUIbuttonPressed = true;
 }
 
+var currRoom = room_get_name(room);
+var canPauseRoom = currRoom != "MainMenu" && currRoom != "LevelSelection" && currRoom != "Credits";
+if (keyboard_check_pressed(vk_escape) && canPauseRoom) {
+	ObjectiveMenuOpen(false);
+	SetPause(!global.isPause);
+}
+
+if (global.isPause) {
+	return;
+}
+
 if (currentDeathResetTimer >= 0) {
 	--currentDeathResetTimer;
 	if (currentDeathResetTimer == 0) {
@@ -78,11 +89,6 @@ if (keyboard_check_pressed(ord("R"))) {
 	ResetRoom();
 	
 	src_SlideTransition(TRANS_MODE.RESTART);
-}
-
-if (keyboard_check_pressed(vk_escape)) {
-	ObjectiveMenuOpen(false);
-	SetPause(!global.isPause);
 }
 
 if (oLivingCat.isDead || oGhostCat.isDead) {

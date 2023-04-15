@@ -95,6 +95,9 @@ function UpdateBoxMovement() {
 	updatedThisFrame = true;
 }
 
+if (global.isPause) {
+	return;
+}
 
 if (!updatedThisFrame)
 	UpdateBoxMovement();

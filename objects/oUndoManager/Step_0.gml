@@ -199,6 +199,9 @@ function PopLast() {
 	oSoundManager.playUndo = true;
 }
 
+if (global.isPause) {
+	return;
+}
 
 // check if players press undo
 if (keyboard_check_pressed(ord("Z"))) {
