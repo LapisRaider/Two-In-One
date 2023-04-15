@@ -41,14 +41,14 @@ function StartTrack(moveDone) {
 	dataToTrack.ghostFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oGhostFish); ++i;) {
 		var fish = instance_find(oGhostFish, i);
-		var ghostFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showText);
+		var ghostFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, fish.fishID, fish.showText);
 		ds_list_add(dataToTrack.ghostFishes, ghostFish);
 	}
 	
 	dataToTrack.livingFishes = ds_list_create();
 	for (var i = 0; i < instance_number(oLivingFish); ++i;) {
 		var fish = instance_find(oLivingFish, i);
-		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, i, fish.showText);
+		var livingFish = new FishData(fish.x, fish.y, fish.image_xscale, fish.image_yscale, fish.fishID, fish.showText);
 		ds_list_add(dataToTrack.livingFishes, livingFish);
 	}
 	
@@ -107,26 +107,52 @@ function PopLast() {
 	oGhostCat.y = dataToTrack.ghostCat.yPos;
 	oGhostCat.moveDir = dataToTrack.ghostCat.moveDir;
 	
+	//find if ghost fish exist previously before undo
 	for (var i = 0; i < ds_list_size(dataToTrack.ghostFishes); ++i;) {
-		var fish = ds_list_find_value(dataToTrack.ghostFishes, i);
-		var ghostFish = instance_find(oGhostFish, fish.objId);
-		if (ghostFish == noone) {
-			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oGhostFish);
-			inst.image_xscale = fish.scaleX;
-			inst.image_yscale = fish.scaleY;
-			inst.showText = fish.showCollectText;
+		var fishInList = ds_list_find_value(dataToTrack.ghostFishes, i);
+
+		var ghostFishExist = false;
+		for (var r = 0; r < instance_number(oGhostFish); ++r;) {
+			var ghostFish = instance_find(oGhostFish, r);
+			if (ghostFish.fishID == fishInList.objId) {
+				ghostFishExist = true;
+				break;
+			}
 		}
+		
+		if (ghostFishExist) {
+			continue;
+		}
+		
+		var inst = instance_create_layer(fishInList.xPos, fishInList.yPos, "Instances", oGhostFish);
+		inst.image_xscale = fishInList.scaleX;
+		inst.image_yscale = fishInList.scaleY;
+		inst.showText = fishInList.showCollectText;
+		inst.fishID = fishInList.objId;
 	}
 	
+	//find if living fish exist previously before undo
 	for (var i = 0; i < ds_list_size(dataToTrack.livingFishes); ++i;) {
-		var fish = ds_list_find_value(dataToTrack.livingFishes, i);
-		var livingFish = instance_find(oLivingFish, fish.objId);
-		if (livingFish == noone) {
-			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oLivingFish);
-			inst.image_xscale = fish.scaleX;
-			inst.image_yscale = fish.scaleY;
-			inst.showText = fish.showCollectText;
+		var fishInList = ds_list_find_value(dataToTrack.livingFishes, i);
+		
+		var livingFishExist = false;
+		for (var r = 0; r < instance_number(oLivingFish); ++r;) {
+			var livingFish = instance_find(oLivingFish, r);
+			if (livingFish.fishID == fishInList.objId) {
+				livingFishExist = true;
+				break;
+			}
 		}
+		
+		if (livingFishExist) {
+			continue;
+		}
+		
+		var inst = instance_create_layer(fishInList.xPos, fishInList.yPos, "Instances", oLivingFish);
+		inst.image_xscale = fishInList.scaleX;
+		inst.image_yscale = fishInList.scaleY;
+		inst.showText = fishInList.showCollectText;
+		inst.fishID = fishInList.objId;
 	}
 	
 
