@@ -16,8 +16,8 @@ if (instance_exists(oCurrProgressTracker)) {
 global.isObjectiveMenuOpen = false;
 
 //tile related graphics
-ghostTile_alpha = global.isLivingCat ? MIN_LAYER_ALPHA : 1;
-livingTile_alpha = global.isLivingCat ? 1 : MIN_LAYER_ALPHA;
+global.ghostTile_alpha = global.isLivingCat ? MIN_LAYER_ALPHA : 1;
+global.livingTile_alpha = global.isLivingCat ? 1 : MIN_LAYER_ALPHA;
 
 ghostTile_alphaHandler = shader_get_uniform(shader_ChangeAlphaGhost, "alpha");
 livingTile_alphaHandler = shader_get_uniform(shader_ChangeAlphaLiving, "alpha");

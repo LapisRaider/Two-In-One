@@ -3,8 +3,8 @@ function InitSwapCat(){
 	var ghostCatAlpha = global.isLivingCat ? MIN_LAYER_ALPHA : 1;
 	var livingCatAlpha = global.isLivingCat ? 1 : MIN_LAYER_ALPHA;
 	
-	ghostTile_alpha = ghostCatAlpha;
-	livingTile_alpha = livingCatAlpha;
+	global.ghostTile_alpha = ghostCatAlpha;
+	global.livingTile_alpha = livingCatAlpha;
 	
 	
 	oLivingCat.image_alpha = livingCatAlpha;
