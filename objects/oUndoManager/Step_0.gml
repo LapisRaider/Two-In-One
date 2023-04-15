@@ -202,5 +202,8 @@ function PopLast() {
 
 // check if players press undo
 if (keyboard_check_pressed(ord("Z"))) {
+	if (instance_exists(oCatDeath)) {
+		instance_destroy(oCatDeath);
+	}
 	PopLast();
 }

@@ -48,7 +48,10 @@ if (mode != TRANS_MODE.OFF) {
 				mode = TRANS_MODE.INTRO;
 				oUndoManager.PopLast();
 				oGameManager.UndoWhenDead();
-				instance_destroy(oCatDeath);
+				
+				if (instance_exists(oCatDeath)) {
+					instance_destroy(oCatDeath);
+				}
 				break;
 			}
 		}
