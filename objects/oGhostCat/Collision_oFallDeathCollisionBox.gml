@@ -2,5 +2,5 @@ if (!isDead) {
 	oSoundManager.playFallPitfall = true;
 }
 
-StartCatDeath();
+StartCatDeath(oGhostCatDeath);
 

@@ -6,5 +6,5 @@ with (other) {
 	isAttacking = true;
 }
 
-StartCatDeath();
+StartCatDeath(oGhostCatDeath);
 

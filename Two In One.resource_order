@@ -36,6 +36,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"oLivingWall","order":4,"path":"objects/oLivingWall/oLivingWall.yy",},
+    {"name":"oGhostCatDeath","order":20,"path":"objects/oGhostCatDeath/oGhostCatDeath.yy",},
     {"name":"sCutScene2","order":2,"path":"sprites/sCutScene2/sCutScene2.yy",},
     {"name":"Room3","order":4,"path":"rooms/Room3/Room3.yy",},
     {"name":"sound_FinalCutscene","order":1,"path":"sounds/sound_FinalCutscene/sound_FinalCutscene.yy",},
@@ -138,6 +139,7 @@
     {"name":"sLogo","order":8,"path":"sprites/sLogo/sLogo.yy",},
     {"name":"sound_hitEnemy","order":7,"path":"sounds/sound_hitEnemy/sound_hitEnemy.yy",},
     {"name":"oSpikes","order":4,"path":"objects/oSpikes/oSpikes.yy",},
+    {"name":"sGhostCat_FallDeath","order":10,"path":"sprites/sGhostCat_FallDeath/sGhostCat_FallDeath.yy",},
     {"name":"oGhostCat_ParentWalls","order":1,"path":"objects/oGhostCat_ParentWalls/oGhostCat_ParentWalls.yy",},
     {"name":"oBGMManager","order":7,"path":"objects/oBGMManager/oBGMManager.yy",},
     {"name":"sLivingCat_Walking","order":3,"path":"sprites/sLivingCat_Walking/sLivingCat_Walking.yy",},

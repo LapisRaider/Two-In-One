@@ -99,12 +99,13 @@ function DyingBehavior() {
 	} 
 }
 
-function StartCatDeath() {
+function StartCatDeath(catDeathObject = oCatDeath) {
 	if (isDead)
 		return;
 
 	isDead = true;
-	instance_create_layer(x, y, "Instances", oCatDeath);
+	
+	instance_create_layer(x, y, "Instances", catDeathObject);
 	
 	if (instance_exists(oLevelTracker)) {
 		oLevelTracker.currDeathCounter += 1;
