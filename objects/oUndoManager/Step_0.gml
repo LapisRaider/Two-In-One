@@ -114,7 +114,7 @@ function PopLast() {
 			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oGhostFish);
 			inst.image_xscale = fish.scaleX;
 			inst.image_yscale = fish.scaleY;
-			inst.showCollectText = fish.showCollectText;
+			inst.showText = fish.showCollectText;
 		}
 	}
 	
@@ -125,7 +125,7 @@ function PopLast() {
 			var inst = instance_create_layer(fish.xPos, fish.yPos, "Instances", oLivingFish);
 			inst.image_xscale = fish.scaleX;
 			inst.image_yscale = fish.scaleY;
-			inst.showCollectText = fish.showCollectText;
+			inst.showText = fish.showCollectText;
 		}
 	}
 	
