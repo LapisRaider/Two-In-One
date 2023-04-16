@@ -1,5 +1,5 @@
 # About
-Two In One is a single-player 2D side-view puzzle-platformer game made with GameMaker v2023.1
+Two In One is a single-player 2D side-view puzzle-platformer game made with GameMaker Studios 2 v2023.1
 
 When Earth had sundered apart, it's up to two friends, torn apart into different worlds, to work together and merge back their worlds; through collecting magical energies in the form of fishes, avoiding traps and enemies, and manipulating certain elements.
 
